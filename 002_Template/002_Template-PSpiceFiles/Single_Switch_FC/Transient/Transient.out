@@ -1,0 +1,184 @@
+
+**** 04/05/21 21:59:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Single_Switch_FC-Transient"  [ D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\002_Template\002_template-pspicefiles\single
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Transient.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 5m 4m 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Single_Switch_FC.net" 
+
+
+
+**** INCLUDING Single_Switch_FC.net ****
+* source 002_TEMPLATE
+V_Vs2         VIN 0 100Vdc
+L_L1         VIN N9038029  500uH  
+L_L2         N9038067 0  250uH  
+M_M3         N9038029 N9038179 0 0 IRFZ34
+R_R1         N9038179 N9038023  33 TC=0,0 
+V_V5         N9038023 0  
++PULSE -1 8 0 1n 1n 25u 100u
+D_D4         N9038067 N9038870 MUR150 
+C_C4         VOUT 0  50u IC=10 TC=0,0 
+R_R_Load2         VOUT 0  15 TC=0,0 
+D_D5         0 N9038870 MUR150 
+L_L3         N9038870 VOUT  500u  
+Kn_K1         L_L1 L_L2     1
+
+**** RESUMING Transient.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file nomd.ind for library file nomd.lib.
+
+INFO(ORPSIM-15422): Making new index file nomd.ind for library file nomd.lib.
+
+Index has 34102 entries from 205 file(s).
+
+**** 04/05/21 21:59:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Single_Switch_FC-Transient"  [ D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\002_Template\002_template-pspicefiles\single
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MUR150          
+          IS    1.043000E-12 
+         ISR    2.094000E-09 
+         IKF    2.705000E-03 
+          RS     .07444      
+          TT  123.300000E-09 
+         CJO   28.430000E-12 
+          VJ     .75         
+           M     .6225       
+         XTI    2            
+
+
+**** 04/05/21 21:59:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Single_Switch_FC-Transient"  [ D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\002_Template\002_template-pspicefiles\single
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRFZ34          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W    2            
+         VTO    3.247        
+          KP   20.420000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    3.031000E-03 
+          RS     .0381       
+          RG    6.827        
+         RDS  266.700000E+03 
+          IS    1.981000E-12 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    2.887000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  365.000000E-09 
+        CGSO  472.100000E-12 
+        CGDO  292.800000E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 04/05/21 21:59:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Single_Switch_FC-Transient"  [ D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\002_Template\002_template-pspicefiles\single
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)  100.0000  ( VOUT)    9.9987  (N9038023)   -1.0000                      
+
+(N9038029)  100.0000                  (N9038067)    0.0000                      
+
+(N9038179)   -1.0000                  (N9038870)    9.9987                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vs2       -3.750E-04
+    V_V5         2.082E-17
+
+    TOTAL POWER DISSIPATION   3.75E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/05/21 21:59:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Single_Switch_FC-Transient"  [ D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\002_Template\002_template-pspicefiles\single
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.16
+

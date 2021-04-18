@@ -1,0 +1,14 @@
+* source 002_TEMPLATE
+V_Vs2         VIN 0 100Vdc
+L_L1         VIN N9038029  500uH  
+L_L2         N9038067 0  250uH  
+M_M3         N9038029 N9038179 0 0 IRFZ34
+R_R1         N9038179 N9038023  33 TC=0,0 
+V_V5         N9038023 0  
++PULSE -1 8 0 1n 1n 25u 100u
+D_D4         N9038067 N9038870 MUR150 
+C_C4         VOUT 0  50u IC=10 TC=0,0 
+R_R_Load2         VOUT 0  15 TC=0,0 
+D_D5         0 N9038870 MUR150 
+L_L3         N9038870 VOUT  500u  
+Kn_K1         L_L1 L_L2     1

@@ -1,0 +1,278 @@
+
+**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AcSweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 10 10k
+.STEP LIN PARAM Rvalue 24k 30k 1k 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 006_EX2NOTCHFILTER
+C_C3         N02545 0  110n  TC=0,0 
+R_R1         IN N02545  {Rvalue} TC=0,0 
+V_V1         IN 0 DC 0Vdc AC 1Vac 
+R_R4         0 N02707  {Rvalue} TC=0,0 
+R_R5         0 N02707  {Rvalue} TC=0,0 
+R_R3         N02545 OUT  {Rvalue} TC=0,0 
+C_C2         0 N02545  110n  TC=0,0 
+C_C5         IN N02707  110n  TC=0,0 
+C_C4         N02707 OUT  110n  TC=0,0 
+.PARAM  rvalue=27k
+
+**** RESUMING AcSweep.cir ****
+.END
+
+**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RVALUE =   24.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    0.0000  (N02545)    0.0000 (N02707)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RVALUE =   25.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    0.0000  (N02545)    0.0000 (N02707)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RVALUE =   26.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    0.0000  (N02545)    0.0000 (N02707)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RVALUE =   27.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    0.0000  (N02545)    0.0000 (N02707)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RVALUE =   28.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    0.0000  (N02545)    0.0000 (N02707)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RVALUE =   29.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    0.0000  (N02545)    0.0000 (N02707)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RVALUE =   30.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    0.0000  (N02545)    0.0000 (N02707)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM RVALUE =   30.0000E+03
+
+
+******************************************************************************
+
+
+
+  License check-out time            =         .63
+  Total job time (using Solver 1)   =         .03
+

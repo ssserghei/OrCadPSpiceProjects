@@ -1,0 +1,92 @@
+
+**** 04/13/21 12:30:25 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweep"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_RESISTORNETWORK\005_NOTCHFILTEX2\005_NOTCHFILTEX
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AcSweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 10 10k
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 005_NOTCHFILTEX2
+V_V1         IN 0 DC 0Vdc AC 1Vac 
+C_C3         N02565 0  110n  TC=0,0 
+C_C5         IN N02739  110n  TC=0,0 
+R_R4         0 N02739  {rvalue} TC=0,0 
+C_C2         0 N02565  110n  TC=0,0 
+C_C4         N02739 OUT  110n  TC=0,0 
+R_R3         N02565 OUT  {rvalue} TC=0,0 
+R_R1         IN N02565  {rvalue} TC=0,0 
+R_R5         0 N02739  {rvalue} TC=0,0 
+.PARAM  rvalue=27k
+
+**** RESUMING AcSweep.cir ****
+.END
+
+**** 04/13/21 12:30:25 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweep"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_RESISTORNETWORK\005_NOTCHFILTEX2\005_NOTCHFILTEX
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    0.0000  (N02565)    0.0000 (N02739)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/13/21 12:30:25 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweep"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_RESISTORNETWORK\005_NOTCHFILTEX2\005_NOTCHFILTEX
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

@@ -1,0 +1,67 @@
+(ExpressProject "004_AcAnalNotchFilt"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[04/10/21]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\004_acanalnotchfilt.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Layout")
+  (Folder "Outputs")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile
+         ".\004_acanalnotchfilt-pspicefiles\schematic1\acsweep\noise.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\004_acanalnotchfilt-pspicefiles\schematic1\acsweep\noise.sim"
+        (DisplayName "SCHEMATIC1-ACSweep/Noise")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "D:\PROGRAM FILES\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\004_AcAnalNotchFilt\004_acanalnotchfilt.dsn")
+      (Path "Design Resources"
+         "D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\004_AcAnalNotchFilt\004_acanalnotchfilt.dsn"
+         "SCHEMATIC1")
+      (Select "Design Resources"
+         "D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\004_AcAnalNotchFilt\004_acanalnotchfilt.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 876"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 5 582 24 561")
+        (Scroll "0 95")
+        (Zoom "176")
+        (Occurrence "/"))
+      (Path
+         "D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\004_ACANALNOTCHFILT\004_ACANALNOTCHFILT.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "SimpalsGarage"))

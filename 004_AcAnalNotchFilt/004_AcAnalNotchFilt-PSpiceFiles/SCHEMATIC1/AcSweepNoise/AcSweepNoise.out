@@ -1,0 +1,91 @@
+
+**** 04/12/21 19:44:30 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweepNoise"  [ d:\yandexdisk\sss_workhome\sss_orcad pspice\004_acanalnotchfilt\004_acanalnotchfilt-PSpiceF
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AcSweepNoise.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 0.5kHz
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 004_ACANALNOTCHFILT
+R_R1         IN N01355  27k TC=0,0 
+V_V1         IN 0 DC 0Vdc AC 1Vac 
+R_R3         N01355 OUT  27k TC=0,0 
+C_C2         0 N01355  100n  TC=0,0 
+C_C3         0 N01355  100n  TC=0,0 
+R_R4         0 N01305  27k TC=0,0 
+R_R5         0 N01305  27k TC=0,0 
+C_C4         N01305 IN  110n  TC=0,0 
+C_C5         OUT N01305  110n  TC=0,0 
+
+**** RESUMING AcSweepNoise.cir ****
+.END
+
+**** 04/12/21 19:44:30 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweepNoise"  [ d:\yandexdisk\sss_workhome\sss_orcad pspice\004_acanalnotchfilt\004_acanalnotchfilt-PSpiceF
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    0.0000  (N01305)    0.0000 (N01355)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/12/21 19:44:30 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweepNoise"  [ d:\yandexdisk\sss_workhome\sss_orcad pspice\004_acanalnotchfilt\004_acanalnotchfilt-PSpiceF
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

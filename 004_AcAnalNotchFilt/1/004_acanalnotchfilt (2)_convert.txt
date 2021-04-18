@@ -1,0 +1,9 @@
+The conversion of the project was successful.
+
+The new directory structure is as follows:
+
+d:/github/orcadpspiceprojects/004_acanalnotchfilt/1
+    004_acanalnotchfilt (2).opj
+    004_acanalnotchfilt.dsn
+d:/github/orcadpspiceprojects/004_acanalnotchfilt/1/004_acanalnotchfilt (2)-PSpiceFiles
+d:/github/orcadpspiceprojects/004_acanalnotchfilt/1/004_acanalnotchfilt (2)-PSpiceFiles/SCHEMATIC1

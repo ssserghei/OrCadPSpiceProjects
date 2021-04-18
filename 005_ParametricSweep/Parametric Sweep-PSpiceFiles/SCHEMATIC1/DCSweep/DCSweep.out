@@ -1,0 +1,58 @@
+
+**** 04/18/21 13:28:22 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DCSweep"  [ D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\005_ParametricSweep\parametric sweep-pspicefiles\sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DCSweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM rvariable 500 100k 500 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PARAMETRIC SWEEP
+R_R1         N00097 N00110  47k TC=0,0 
+R_R2         0 N00110  {rvariable} TC=0,0 
+V_V1         N00097 0 10Vdc
+.PARAM  rvariable=10k
+
+**** RESUMING DCSweep.cir ****
+.END
+
+
+          JOB CONCLUDED
+
+**** 04/18/21 13:28:22 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DCSweep"  [ D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\005_ParametricSweep\parametric sweep-pspicefiles\sch
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

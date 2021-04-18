@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-DCTransientTtransistor"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_ResistorNetwork\003_ResistorNetwork-PSpiceFiles\SCHEMATIC1\DCTransientTtransistor.sim ] 
+
+** Creating circuit file "DCTransientTtransistor.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_VCE 0 1.5 0.1 
++ LIN I_I1 1uA 1mA 100uA 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

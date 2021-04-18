@@ -1,0 +1,54 @@
+(ExpressProject "004_AcAnalNotchFilt"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[04/12/21]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (Allegro Netlist Directory "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "TRUE")
+    (File ".\004_acanalnotchfilt.dsn"
+      (Type "Schematic Design")))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\004_acanalnotchfilt-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles")
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "D:\PROGRAM FILES\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "d:\github\orcadpspiceprojects\004_acanalnotchfilt\1\004_acanalnotchfilt.dsn")
+      (Path "Design Resources"
+         "d:\github\orcadpspiceprojects\004_acanalnotchfilt\1\004_acanalnotchfilt.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "d:\github\orcadpspiceprojects\004_acanalnotchfilt\1\004_acanalnotchfilt.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 231 0 454"))
+      (Tab 0)))
+  (MPSSessionName "Maxim"))

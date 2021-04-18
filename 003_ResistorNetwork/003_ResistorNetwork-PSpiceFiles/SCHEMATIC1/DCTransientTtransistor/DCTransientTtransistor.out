@@ -1,0 +1,102 @@
+
+**** 04/08/21 17:00:51 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DCTransientTtransistor"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_ResistorNetwork\003_ResistorNetwo
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DCTransientTtransistor.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_VCE 0 1.5 0.1 
++ LIN I_I1 1uA 1mA 100uA 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 003_RESISTORNETWORK
+V_Vsupply         IN 0 10Vdc
+R_R1         IN OUT  10R TC=0,0 
+R_R2         0 OUT  10R TC=0,0 
+C_C1         0 OUT  1n  TC=0,0 
+I_I1         0 N01415 DC 0Adc  
+R_R3         N01415 N01422  100k TC=0,0 
+R_R4         N01426 N01430  10R TC=0,0 
+V_VCE         N01430 0 12V
+Q_Q1         N01426 N01422 0 QbreakN 
+
+**** RESUMING DCTransientTtransistor.cir ****
+.END
+
+**** 04/08/21 17:00:51 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DCTransientTtransistor"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_ResistorNetwork\003_ResistorNetwo
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         
+               NPN             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+
+          JOB CONCLUDED
+
+**** 04/08/21 17:00:51 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DCTransientTtransistor"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_ResistorNetwork\003_ResistorNetwo
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

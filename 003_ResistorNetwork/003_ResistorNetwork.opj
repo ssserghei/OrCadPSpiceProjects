@@ -1,0 +1,114 @@
+(ExpressProject "003_ResistorNetwork"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[04/08/21]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "c:\cadence\spb_17.2\tools\capture\library\pspice\1_shot.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\003_resistornetwork.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\003_resistornetwork-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\003_resistornetwork-pspicefiles\schematic1\bias point.sim"
+        (DisplayName "SCHEMATIC1-Bias Point")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\003_resistornetwork-pspicefiles\schematic1\2.sim"
+        (DisplayName "SCHEMATIC1-2")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\003_resistornetwork-pspicefiles\schematic1\www.sim"
+        (DisplayName "SCHEMATIC1-www")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\003_resistornetwork-pspicefiles\schematic1\dc sweep.sim"
+        (DisplayName "SCHEMATIC1-DC Sweep")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\003_resistornetwork-pspicefiles\schematic1\dctransientttransistor.sim"
+        (DisplayName "SCHEMATIC1-DCTransientTtransistor")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\003_resistornetwork-pspicefiles\schematic1\dctransient2.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\003_resistornetwork-pspicefiles\schematic1\dctransient2.sim"
+        (DisplayName "SCHEMATIC1-DcTransient2")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (MPSSessionName "Maxim")
+  (PartMRUSelector
+    (QbreakN
+      (FullPartName "QbreakN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (IDC
+      (FullPartName "IDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_17.2\tools\capture\library\pspice")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Logs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 134 0 520"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 582 24 561")
+        (Scroll "70 60")
+        (Zoom "118")
+        (Occurrence "/"))
+      (Path
+         "D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_RESISTORNETWORK\003_RESISTORNETWORK.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (Folder "Logs"))

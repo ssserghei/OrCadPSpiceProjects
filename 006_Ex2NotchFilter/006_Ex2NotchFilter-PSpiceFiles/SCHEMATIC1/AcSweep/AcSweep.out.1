@@ -1,0 +1,55 @@
+
+**** 04/18/21 14:50:40 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AcSweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 10 10k
+.STEP LIN PARAM Rvalue 24k 30k 1k 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 006_EX2NOTCHFILTER
+C_C3         N02545 0  110n  TC=0,0 
+R_R1         IN N02545  27k TC=0,0 
+V_V1         IN 0 DC 0Vdc AC 1Vac 
+R_R4         0 N02707  27k TC=0,0 
+R_R5         0 N02707  27k TC=0,0 
+R_R3         N02545 OUT  27k TC=0,0 
+C_C2         0 N02545  110n  TC=0,0 
+C_C5         IN N02707  110n  TC=0,0 
+C_C4         N02707 OUT  110n  TC=0,0 
+
+**** RESUMING AcSweep.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file nom.ind for library file nom.lib.
+
+INFO(ORPSIM-15422): Making new index file nom.ind for library file nom.lib.
+
+Index has 34602 entries from 208 file(s).
+
+ERROR(ORPSIM-15167): Undefined parameter: Rvalue.
+

@@ -1,0 +1,10 @@
+* source 003_RESISTORNETWORK
+V_Vsupply         IN 0 10Vdc
+R_R1         IN OUT  10R TC=0,0 
+R_R2         0 OUT  10R TC=0,0 
+C_C1         0 OUT  1n  TC=0,0 
+I_I1         0 N01415 DC 0Adc  
+R_R3         N01415 N01422  100k TC=0,0 
+R_R4         N01426 N01430  10R TC=0,0 
+V_VCE         N01430 0 12V
+Q_Q1         N01426 N01422 0 QbreakN 

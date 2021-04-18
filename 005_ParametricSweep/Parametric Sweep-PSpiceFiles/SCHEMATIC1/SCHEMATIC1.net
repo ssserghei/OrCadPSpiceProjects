@@ -1,0 +1,5 @@
+* source PARAMETRIC SWEEP
+R_R1         N00097 N00110  47k TC=0,0 
+R_R2         0 N00110  {rvariable} TC=0,0 
+V_V1         N00097 0 10Vdc
+.PARAM  rvariable=10k

@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-DcTransient2"  [ d:\yandexdisk\sss_workhome\sss_orcad pspice\003_resistornetwork\003_resistornetwork-pspicefiles\schematic1\dctransient2.sim ] 
+
+** Creating circuit file "DcTransient2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_VCE 0 1.5 0.1 
++ LIN I_I1 0 1mA 100uA 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

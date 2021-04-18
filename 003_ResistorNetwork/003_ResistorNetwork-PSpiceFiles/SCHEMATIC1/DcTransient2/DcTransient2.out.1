@@ -1,0 +1,49 @@
+
+**** 04/08/21 21:12:17 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DcTransient2"  [ D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\003_ResistorNetwork\003_resistornetwork-pspicef
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DcTransient2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_VCE 0 1.5 0.1 
++ LIN I_I1 1uA 1mA 100uA 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 003_RESISTORNETWORK
+V_Vsupply         IN 0 10Vdc
+R_R1         IN OUT  10R TC=0,0 
+R_R2         0 OUT  10R TC=0,0 
+C_C1         0 OUT  1n  TC=0,0 
+I_I1         0 N01415 DC 0Adc  
+R_R3         N01415 N01422  100k TC=0,0 
+R_R4         N01426 0  10R TC=0,0 
+V_VCE         0 0 12V
+Q_Q1         N01426 N01422 0 QbreakN 
+
+**** RESUMING DcTransient2.cir ****
+.END
+
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving V_VCE. You may break the loop by adding a series resistance
+

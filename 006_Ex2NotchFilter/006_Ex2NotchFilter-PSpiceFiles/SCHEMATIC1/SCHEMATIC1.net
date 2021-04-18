@@ -1,0 +1,11 @@
+* source 006_EX2NOTCHFILTER
+C_C3         N02545 0  110n  TC=0,0 
+R_R1         IN N02545  {Rvalue} TC=0,0 
+V_V1         IN 0 DC 0Vdc AC 1Vac 
+R_R4         0 N02707  {Rvalue} TC=0,0 
+R_R5         0 N02707  {Rvalue} TC=0,0 
+R_R3         N02545 OUT  {Rvalue} TC=0,0 
+C_C2         0 N02545  110n  TC=0,0 
+C_C5         IN N02707  110n  TC=0,0 
+C_C4         N02707 OUT  110n  TC=0,0 
+.PARAM  rvalue=27k

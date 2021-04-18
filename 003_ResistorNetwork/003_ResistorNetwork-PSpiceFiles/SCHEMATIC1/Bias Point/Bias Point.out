@@ -1,0 +1,99 @@
+
+**** 04/08/21 10:47:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Bias Point"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_ResistorNetwork\003_resistornetwork-pspicefil
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Bias Point.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 003_RESISTORNETWORK
+V_V1         IN 0 10Vdc
+R_R1         IN OUT  10R TC=0,0 
+R_R2         0 OUT  10R TC=0,0 
+C_C1         0 OUT  1n  TC=0,0 
+
+**** RESUMING "Bias Point.cir" ****
+.END
+
+**** 04/08/21 10:47:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Bias Point"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_ResistorNetwork\003_resistornetwork-pspicefil
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)   10.0000  (  OUT)    5.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.000E-01
+
+    TOTAL POWER DISSIPATION   5.00E+00  WATTS
+
+
+**** 04/08/21 10:47:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Bias Point"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_ResistorNetwork\003_resistornetwork-pspicefil
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+**** 04/08/21 10:47:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Bias Point"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_ResistorNetwork\003_resistornetwork-pspicefil
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+
