@@ -1,5 +1,5 @@
 
-**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
 
@@ -46,7 +46,7 @@ C_C4         N02707 OUT  110n  TC=0,0
 **** RESUMING AcSweep.cir ****
 .END
 
-**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
 
@@ -76,7 +76,7 @@ C_C4         N02707 OUT  110n  TC=0,0
     TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
 
-**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
 
@@ -106,7 +106,7 @@ C_C4         N02707 OUT  110n  TC=0,0
     TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
 
-**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
 
@@ -136,7 +136,7 @@ C_C4         N02707 OUT  110n  TC=0,0
     TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
 
-**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
 
@@ -166,7 +166,7 @@ C_C4         N02707 OUT  110n  TC=0,0
     TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
 
-**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
 
@@ -196,7 +196,7 @@ C_C4         N02707 OUT  110n  TC=0,0
     TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
 
-**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
 
@@ -226,7 +226,7 @@ C_C4         N02707 OUT  110n  TC=0,0
     TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
 
-**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
 
@@ -259,7 +259,7 @@ C_C4         N02707 OUT  110n  TC=0,0
 
           JOB CONCLUDED
 
-**** 04/18/21 15:33:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
 
@@ -273,6 +273,6 @@ C_C4         N02707 OUT  110n  TC=0,0
 
 
 
-  License check-out time            =         .63
+  License check-out time            =         .72
   Total job time (using Solver 1)   =         .03
 

@@ -1,0 +1,759 @@
+
+**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ACSweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 10 10k
+.STEP LIN PARAM ratio 0.1 0.9 0.1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 005_EXACTIVENOTCHFILT
+V_V1         VCC 0 12Vdc
+V_V2         VSS 0 -12Vdc
+C_C5         IN N04032  110n  TC=0,0 
+R_R5         N03952 N04032  {Rvalue} TC=0,0 
+V_V3         IN 0 DC 0Vdc AC 1Vac 
+R_R3         N03860 N03882  {Rvalue} TC=0,0 
+C_C4         N04032 N03882  110n  TC=0,0 
+C_C2         N03952 N03860  110n  TC=0,0 
+R_R1         IN N03860  {Rvalue} TC=0,0 
+C_C3         N03860 N03952  110n  TC=0,0 
+R_R4         N03952 N04032  {Rvalue} TC=0,0 
+X_U1A         N03882 OUT VCC VSS OUT AD648A
+X_U1B         N05718 N03952 VCC VSS N03952 AD648A
+X_R6         OUT N05718 0 POT PARAMS: SET={ratio} VALUE=100k
+.PARAM  rvalue=27k ratio=0.5
+
+**** RESUMING ACSweep.cir ****
+.END
+
+**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.dx        X_U1A.dy        X_U1B.dx        X_U1B.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS                    1.000000E-03                    1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.jx        X_U1B.jx        
+               NJF             NJF             
+         VTO   -1              -1            
+        BETA  548.300000E-06  548.300000E-06 
+          IS    2.500000E-12    2.500000E-12 
+
+
+**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RATIO =     .1   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)-88.30E-06  (  VCC)   12.0000  (  VSS)  -12.0000      
+
+(N03860) 476.6E-09 (N03882) 953.3E-09 (N03952)-97.93E-06 (N04032)-97.93E-06     
+
+(N05718)-8.671E-06 (X_U1A.6) 1.387E-09                   (X_U1A.7)-88.30E-06    
+
+(X_U1A.8)-88.30E-06                   (X_U1A.9)    0.0000                       
+
+(X_U1B.6) 1.539E-09                   (X_U1B.7)-97.93E-06                       
+
+(X_U1B.8)-97.93E-06                   (X_U1B.9)    0.0000                       
+
+(X_U1A.10)     .7970                  (X_U1A.11)   11.8560                      
+
+(X_U1A.12)   11.8560                  (X_U1A.53)   10.0000                      
+
+(X_U1A.54)  -10.0000                  (X_U1A.90)-902.4E-09                      
+
+(X_U1A.91)   15.0000                  (X_U1A.92)  -15.0000                      
+
+(X_U1A.99)    0.0000                  (X_U1B.10)     .7970                      
+
+(X_U1B.11)   11.8560                  (X_U1B.12)   11.8560                      
+
+(X_U1B.53)   10.0000                  (X_U1B.54)  -10.0000                      
+
+(X_U1B.90)-17.65E-09                  (X_U1B.91)   15.0000                      
+
+(X_U1B.92)  -15.0000                  (X_U1B.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.623E-04
+    V_V2         3.620E-04
+    V_V3         1.765E-11
+    X_U1A.vb     1.387E-14
+    X_U1A.vc     1.000E-11
+    X_U1A.ve     1.137E-11
+    X_U1A.vlim  -9.024E-10
+    X_U1A.vlp   -1.500E-11
+    X_U1A.vln   -1.500E-11
+    X_U1B.vb     1.539E-14
+    X_U1B.vc     1.000E-11
+    X_U1B.ve     1.137E-11
+    X_U1B.vlim  -1.765E-11
+    X_U1B.vlp   -1.500E-11
+    X_U1B.vln   -1.500E-11
+
+    TOTAL POWER DISSIPATION   8.69E-03  WATTS
+
+
+**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RATIO =     .2   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)-88.30E-06  (  VCC)   12.0000  (  VSS)  -12.0000      
+
+(N03860) 476.6E-09 (N03882) 953.3E-09 (N03952)-106.6E-06 (N04032)-106.6E-06     
+
+(N05718)-17.38E-06 (X_U1A.6) 1.387E-09                   (X_U1A.7)-88.30E-06    
+
+(X_U1A.8)-88.30E-06                   (X_U1A.9)    0.0000                       
+
+(X_U1B.6) 1.675E-09                   (X_U1B.7)-106.6E-06                       
+
+(X_U1B.8)-106.6E-06                   (X_U1B.9)    0.0000                       
+
+(X_U1A.10)     .7970                  (X_U1A.11)   11.8560                      
+
+(X_U1A.12)   11.8560                  (X_U1A.53)   10.0000                      
+
+(X_U1A.54)  -10.0000                  (X_U1A.90)-904.2E-09                      
+
+(X_U1A.91)   15.0000                  (X_U1A.92)  -15.0000                      
+
+(X_U1A.99)    0.0000                  (X_U1B.10)     .7970                      
+
+(X_U1B.11)   11.8560                  (X_U1B.12)   11.8560                      
+
+(X_U1B.53)   10.0000                  (X_U1B.54)  -10.0000                      
+
+(X_U1B.90)-17.65E-09                  (X_U1B.91)   15.0000                      
+
+(X_U1B.92)  -15.0000                  (X_U1B.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.623E-04
+    V_V2         3.620E-04
+    V_V3         1.765E-11
+    X_U1A.vb     1.387E-14
+    X_U1A.vc     1.000E-11
+    X_U1A.ve     1.137E-11
+    X_U1A.vlim  -9.042E-10
+    X_U1A.vlp   -1.500E-11
+    X_U1A.vln   -1.500E-11
+    X_U1B.vb     1.675E-14
+    X_U1B.vc     1.000E-11
+    X_U1B.ve     1.137E-11
+    X_U1B.vlim  -1.765E-11
+    X_U1B.vlp   -1.500E-11
+    X_U1B.vln   -1.500E-11
+
+    TOTAL POWER DISSIPATION   8.69E-03  WATTS
+
+
+**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RATIO =     .3   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)-88.30E-06  (  VCC)   12.0000  (  VSS)  -12.0000      
+
+(N03860) 476.6E-09 (N03882) 953.3E-09 (N03952)-115.4E-06 (N04032)-115.4E-06     
+
+(N05718)-26.12E-06 (X_U1A.6) 1.387E-09                   (X_U1A.7)-88.30E-06    
+
+(X_U1A.8)-88.30E-06                   (X_U1A.9)    0.0000                       
+
+(X_U1B.6) 1.813E-09                   (X_U1B.7)-115.4E-06                       
+
+(X_U1B.8)-115.4E-06                   (X_U1B.9)    0.0000                       
+
+(X_U1A.10)     .7970                  (X_U1A.11)   11.8560                      
+
+(X_U1A.12)   11.8560                  (X_U1A.53)   10.0000                      
+
+(X_U1A.54)  -10.0000                  (X_U1A.90)-906.0E-09                      
+
+(X_U1A.91)   15.0000                  (X_U1A.92)  -15.0000                      
+
+(X_U1A.99)    0.0000                  (X_U1B.10)     .7970                      
+
+(X_U1B.11)   11.8560                  (X_U1B.12)   11.8560                      
+
+(X_U1B.53)   10.0000                  (X_U1B.54)  -10.0000                      
+
+(X_U1B.90)-17.65E-09                  (X_U1B.91)   15.0000                      
+
+(X_U1B.92)  -15.0000                  (X_U1B.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.623E-04
+    V_V2         3.620E-04
+    V_V3         1.765E-11
+    X_U1A.vb     1.387E-14
+    X_U1A.vc     1.000E-11
+    X_U1A.ve     1.137E-11
+    X_U1A.vlim  -9.060E-10
+    X_U1A.vlp   -1.500E-11
+    X_U1A.vln   -1.500E-11
+    X_U1B.vb     1.813E-14
+    X_U1B.vc     1.000E-11
+    X_U1B.ve     1.137E-11
+    X_U1B.vlim  -1.765E-11
+    X_U1B.vlp   -1.500E-11
+    X_U1B.vln   -1.500E-11
+
+    TOTAL POWER DISSIPATION   8.69E-03  WATTS
+
+
+**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RATIO =     .4   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)-88.30E-06  (  VCC)   12.0000  (  VSS)  -12.0000      
+
+(N03860) 476.6E-09 (N03882) 953.3E-09 (N03952)-124.1E-06 (N04032)-124.1E-06     
+
+(N05718)-34.90E-06 (X_U1A.6) 1.387E-09                   (X_U1A.7)-88.30E-06    
+
+(X_U1A.8)-88.30E-06                   (X_U1A.9)    0.0000                       
+
+(X_U1B.6) 1.951E-09                   (X_U1B.7)-124.1E-06                       
+
+(X_U1B.8)-124.1E-06                   (X_U1B.9)    0.0000                       
+
+(X_U1A.10)     .7970                  (X_U1A.11)   11.8560                      
+
+(X_U1A.12)   11.8560                  (X_U1A.53)   10.0000                      
+
+(X_U1A.54)  -10.0000                  (X_U1A.90)-907.7E-09                      
+
+(X_U1A.91)   15.0000                  (X_U1A.92)  -15.0000                      
+
+(X_U1A.99)    0.0000                  (X_U1B.10)     .7969                      
+
+(X_U1B.11)   11.8560                  (X_U1B.12)   11.8560                      
+
+(X_U1B.53)   10.0000                  (X_U1B.54)  -10.0000                      
+
+(X_U1B.90)-17.65E-09                  (X_U1B.91)   15.0000                      
+
+(X_U1B.92)  -15.0000                  (X_U1B.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.623E-04
+    V_V2         3.620E-04
+    V_V3         1.765E-11
+    X_U1A.vb     1.387E-14
+    X_U1A.vc     1.000E-11
+    X_U1A.ve     1.137E-11
+    X_U1A.vlim  -9.077E-10
+    X_U1A.vlp   -1.500E-11
+    X_U1A.vln   -1.500E-11
+    X_U1B.vb     1.950E-14
+    X_U1B.vc     1.000E-11
+    X_U1B.ve     1.137E-11
+    X_U1B.vlim  -1.765E-11
+    X_U1B.vlp   -1.500E-11
+    X_U1B.vln   -1.500E-11
+
+    TOTAL POWER DISSIPATION   8.69E-03  WATTS
+
+
+**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RATIO =     .5   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)-88.30E-06  (  VCC)   12.0000  (  VSS)  -12.0000      
+
+(N03860) 476.6E-09 (N03882) 953.3E-09 (N03952)-133.0E-06 (N04032)-133.0E-06     
+
+(N05718)-43.71E-06 (X_U1A.6) 1.387E-09                   (X_U1A.7)-88.30E-06    
+
+(X_U1A.8)-88.30E-06                   (X_U1A.9)    0.0000                       
+
+(X_U1B.6) 2.089E-09                   (X_U1B.7)-133.0E-06                       
+
+(X_U1B.8)-133.0E-06                   (X_U1B.9)    0.0000                       
+
+(X_U1A.10)     .7970                  (X_U1A.11)   11.8560                      
+
+(X_U1A.12)   11.8560                  (X_U1A.53)   10.0000                      
+
+(X_U1A.54)  -10.0000                  (X_U1A.90)-909.5E-09                      
+
+(X_U1A.91)   15.0000                  (X_U1A.92)  -15.0000                      
+
+(X_U1A.99)    0.0000                  (X_U1B.10)     .7969                      
+
+(X_U1B.11)   11.8560                  (X_U1B.12)   11.8560                      
+
+(X_U1B.53)   10.0000                  (X_U1B.54)  -10.0000                      
+
+(X_U1B.90)-17.65E-09                  (X_U1B.91)   15.0000                      
+
+(X_U1B.92)  -15.0000                  (X_U1B.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.623E-04
+    V_V2         3.620E-04
+    V_V3         1.765E-11
+    X_U1A.vb     1.387E-14
+    X_U1A.vc     1.000E-11
+    X_U1A.ve     1.137E-11
+    X_U1A.vlim  -9.095E-10
+    X_U1A.vlp   -1.500E-11
+    X_U1A.vln   -1.500E-11
+    X_U1B.vb     2.089E-14
+    X_U1B.vc     1.000E-11
+    X_U1B.ve     1.137E-11
+    X_U1B.vlim  -1.765E-11
+    X_U1B.vlp   -1.500E-11
+    X_U1B.vln   -1.500E-11
+
+    TOTAL POWER DISSIPATION   8.69E-03  WATTS
+
+
+**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RATIO =     .6   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)-88.30E-06  (  VCC)   12.0000  (  VSS)  -12.0000      
+
+(N03860) 476.6E-09 (N03882) 953.3E-09 (N03952)-141.8E-06 (N04032)-141.8E-06     
+
+(N05718)-52.56E-06 (X_U1A.6) 1.387E-09                   (X_U1A.7)-88.30E-06    
+
+(X_U1A.8)-88.30E-06                   (X_U1A.9)    0.0000                       
+
+(X_U1B.6) 2.228E-09                   (X_U1B.7)-141.8E-06                       
+
+(X_U1B.8)-141.8E-06                   (X_U1B.9)    0.0000                       
+
+(X_U1A.10)     .7970                  (X_U1A.11)   11.8560                      
+
+(X_U1A.12)   11.8560                  (X_U1A.53)   10.0000                      
+
+(X_U1A.54)  -10.0000                  (X_U1A.90)-911.3E-09                      
+
+(X_U1A.91)   15.0000                  (X_U1A.92)  -15.0000                      
+
+(X_U1A.99)    0.0000                  (X_U1B.10)     .7969                      
+
+(X_U1B.11)   11.8560                  (X_U1B.12)   11.8560                      
+
+(X_U1B.53)   10.0000                  (X_U1B.54)  -10.0000                      
+
+(X_U1B.90)-17.65E-09                  (X_U1B.91)   15.0000                      
+
+(X_U1B.92)  -15.0000                  (X_U1B.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.623E-04
+    V_V2         3.620E-04
+    V_V3         1.765E-11
+    X_U1A.vb     1.387E-14
+    X_U1A.vc     1.000E-11
+    X_U1A.ve     1.137E-11
+    X_U1A.vlim  -9.113E-10
+    X_U1A.vlp   -1.500E-11
+    X_U1A.vln   -1.500E-11
+    X_U1B.vb     2.228E-14
+    X_U1B.vc     1.000E-11
+    X_U1B.ve     1.137E-11
+    X_U1B.vlim  -1.765E-11
+    X_U1B.vlp   -1.500E-11
+    X_U1B.vln   -1.500E-11
+
+    TOTAL POWER DISSIPATION   8.69E-03  WATTS
+
+
+**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RATIO =     .7   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)-88.30E-06  (  VCC)   12.0000  (  VSS)  -12.0000      
+
+(N03860) 476.6E-09 (N03882) 953.3E-09 (N03952)-150.7E-06 (N04032)-150.7E-06     
+
+(N05718)-61.44E-06 (X_U1A.6) 1.387E-09                   (X_U1A.7)-88.30E-06    
+
+(X_U1A.8)-88.30E-06                   (X_U1A.9)    0.0000                       
+
+(X_U1B.6) 2.367E-09                   (X_U1B.7)-150.7E-06                       
+
+(X_U1B.8)-150.7E-06                   (X_U1B.9)    0.0000                       
+
+(X_U1A.10)     .7970                  (X_U1A.11)   11.8560                      
+
+(X_U1A.12)   11.8560                  (X_U1A.53)   10.0000                      
+
+(X_U1A.54)  -10.0000                  (X_U1A.90)-913.0E-09                      
+
+(X_U1A.91)   15.0000                  (X_U1A.92)  -15.0000                      
+
+(X_U1A.99)    0.0000                  (X_U1B.10)     .7969                      
+
+(X_U1B.11)   11.8560                  (X_U1B.12)   11.8560                      
+
+(X_U1B.53)   10.0000                  (X_U1B.54)  -10.0000                      
+
+(X_U1B.90)-17.65E-09                  (X_U1B.91)   15.0000                      
+
+(X_U1B.92)  -15.0000                  (X_U1B.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.623E-04
+    V_V2         3.620E-04
+    V_V3         1.765E-11
+    X_U1A.vb     1.387E-14
+    X_U1A.vc     1.000E-11
+    X_U1A.ve     1.137E-11
+    X_U1A.vlim  -9.130E-10
+    X_U1A.vlp   -1.500E-11
+    X_U1A.vln   -1.500E-11
+    X_U1B.vb     2.367E-14
+    X_U1B.vc     1.000E-11
+    X_U1B.ve     1.137E-11
+    X_U1B.vlim  -1.765E-11
+    X_U1B.vlp   -1.500E-11
+    X_U1B.vln   -1.500E-11
+
+    TOTAL POWER DISSIPATION   8.69E-03  WATTS
+
+
+**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RATIO =     .8   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)-88.30E-06  (  VCC)   12.0000  (  VSS)  -12.0000      
+
+(N03860) 476.6E-09 (N03882) 953.3E-09 (N03952)-159.6E-06 (N04032)-159.6E-06     
+
+(N05718)-70.36E-06 (X_U1A.6) 1.387E-09                   (X_U1A.7)-88.30E-06    
+
+(X_U1A.8)-88.30E-06                   (X_U1A.9)    0.0000                       
+
+(X_U1B.6) 2.508E-09                   (X_U1B.7)-159.6E-06                       
+
+(X_U1B.8)-159.6E-06                   (X_U1B.9)    0.0000                       
+
+(X_U1A.10)     .7970                  (X_U1A.11)   11.8560                      
+
+(X_U1A.12)   11.8560                  (X_U1A.53)   10.0000                      
+
+(X_U1A.54)  -10.0000                  (X_U1A.90)-914.8E-09                      
+
+(X_U1A.91)   15.0000                  (X_U1A.92)  -15.0000                      
+
+(X_U1A.99)    0.0000                  (X_U1B.10)     .7969                      
+
+(X_U1B.11)   11.8560                  (X_U1B.12)   11.8560                      
+
+(X_U1B.53)   10.0000                  (X_U1B.54)  -10.0000                      
+
+(X_U1B.90)-17.65E-09                  (X_U1B.91)   15.0000                      
+
+(X_U1B.92)  -15.0000                  (X_U1B.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.623E-04
+    V_V2         3.620E-04
+    V_V3         1.765E-11
+    X_U1A.vb     1.387E-14
+    X_U1A.vc     1.000E-11
+    X_U1A.ve     1.137E-11
+    X_U1A.vlim  -9.148E-10
+    X_U1A.vlp   -1.500E-11
+    X_U1A.vln   -1.500E-11
+    X_U1B.vb     2.508E-14
+    X_U1B.vc     1.000E-11
+    X_U1B.ve     1.137E-11
+    X_U1B.vlim  -1.765E-11
+    X_U1B.vlp   -1.500E-11
+    X_U1B.vln   -1.500E-11
+
+    TOTAL POWER DISSIPATION   8.69E-03  WATTS
+
+
+**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RATIO =     .9   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)-88.30E-06  (  VCC)   12.0000  (  VSS)  -12.0000      
+
+(N03860) 476.6E-09 (N03882) 953.3E-09 (N03952)-168.6E-06 (N04032)-168.6E-06     
+
+(N05718)-79.31E-06 (X_U1A.6) 1.387E-09                   (X_U1A.7)-88.30E-06    
+
+(X_U1A.8)-88.30E-06                   (X_U1A.9)    0.0000                       
+
+(X_U1B.6) 2.648E-09                   (X_U1B.7)-168.6E-06                       
+
+(X_U1B.8)-168.6E-06                   (X_U1B.9)    0.0000                       
+
+(X_U1A.10)     .7970                  (X_U1A.11)   11.8560                      
+
+(X_U1A.12)   11.8560                  (X_U1A.53)   10.0000                      
+
+(X_U1A.54)  -10.0000                  (X_U1A.90)-916.6E-09                      
+
+(X_U1A.91)   15.0000                  (X_U1A.92)  -15.0000                      
+
+(X_U1A.99)    0.0000                  (X_U1B.10)     .7969                      
+
+(X_U1B.11)   11.8560                  (X_U1B.12)   11.8560                      
+
+(X_U1B.53)   10.0000                  (X_U1B.54)  -10.0000                      
+
+(X_U1B.90)-17.65E-09                  (X_U1B.91)   15.0000                      
+
+(X_U1B.92)  -15.0000                  (X_U1B.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.623E-04
+    V_V2         3.620E-04
+    V_V3         1.765E-11
+    X_U1A.vb     1.387E-14
+    X_U1A.vc     1.000E-11
+    X_U1A.ve     1.137E-11
+    X_U1A.vlim  -9.166E-10
+    X_U1A.vlp   -1.500E-11
+    X_U1A.vln   -1.500E-11
+    X_U1B.vb     2.648E-14
+    X_U1B.vc     1.000E-11
+    X_U1B.ve     1.137E-11
+    X_U1B.vlim  -1.765E-11
+    X_U1B.vlp   -1.500E-11
+    X_U1B.vln   -1.500E-11
+
+    TOTAL POWER DISSIPATION   8.69E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM RATIO =     .9   
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .08
+

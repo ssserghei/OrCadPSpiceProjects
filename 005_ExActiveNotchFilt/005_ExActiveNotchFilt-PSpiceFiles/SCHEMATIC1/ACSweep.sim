@@ -1,13 +1,13 @@
 @OrCAD Simulation Server Version: 1.0
 
-@Settings: 1 1
+@Settings: 2 1
 @General:
-ProfileName= "DCSweep" 
-ProfileFile= "DCSweep.sim" 
+ProfileName= "ACSweep" 
+ProfileFile= "ACSweep.sim" 
 Connectivity= "SCHEMATIC1.net" 
-NetlistFile= "DCSweep.cir" 
-DataFile= "DCSweep.dat" 
-OutFile= "DCSweep.out" 
+NetlistFile= "ACSweep.cir" 
+DataFile= "ACSweep.dat" 
+OutFile= "ACSweep.out" 
 Notes=
 @#$BEGINNOTES
 @#$ENDNOTES
@@ -22,24 +22,24 @@ Notes=
 +5 "" 
 +6 "" 
 @End Analysis
-@Analysis: 1 0
+@Analysis: 1 1
 +2 0 0
++0 "100" 
++1 "10" 
++2 "10k" 
++3 "" 
++4 "" 
++5 "" 
+@End Analysis
+@Analysis: 2 0
++0 0
 +0 "" 
 +1 "" 
 +2 "" 
 +3 "" 
 +4 "" 
 +5 "" 
-@End Analysis
-@Analysis: 2 1
-+0 2
-+0 "" 
-+1 "rvariable" 
-+2 "" 
-+3 "" 
-+4 "500" 
-+5 "100k" 
-+6 "500" 
++6 "" 
 +7 "" 
 @End Analysis
 @Analysis: 3 0
@@ -49,7 +49,7 @@ Notes=
 +2 "" 
 @End Analysis
 @Analysis: 4 0
-+0 0 1 0 0 0 1 0 0 0 1
++0 0 1 0 0 0 2 0 0 0 1
 +0 "" 
 +1 "" 
 +2 "" 
@@ -61,15 +61,15 @@ Notes=
 LoadFile 0 "" 
 SaveFile 0 "" 
 @End Analysis
-@Analysis: 5 0
-+0 0
+@Analysis: 5 1
++0 2
 +0 "" 
-+1 "" 
++1 "ratio" 
 +2 "" 
 +3 "" 
-+4 "" 
-+5 "" 
-+6 "" 
++4 "0.1" 
++5 "0.9" 
++6 "0.1" 
 +7 "" 
 @End Analysis
 @Analysis: 6 0

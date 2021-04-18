@@ -1,6 +1,6 @@
-** Profile: "SCHEMATIC1-DCSweep"  [ D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\005_ParametricSweep\parametric sweep-pspicefiles\schematic1\dcsweep.sim ] 
+** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1\ACSweep.sim ] 
 
-** Creating circuit file "DCSweep.cir" 
+** Creating circuit file "ACSweep.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
@@ -10,7 +10,8 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.DC LIN PARAM rvariable 500 100k 500 
+.AC DEC 100 10 10k
+.STEP LIN PARAM ratio 0.1 0.9 0.1 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 

@@ -1,0 +1,16 @@
+* source 005_EXACTIVENOTCHFILT
+V_V1         VCC 0 12Vdc
+V_V2         VSS 0 -12Vdc
+C_C5         IN N04032  110n  TC=0,0 
+R_R5         N03952 N04032  {Rvalue} TC=0,0 
+V_V3         IN 0 DC 0Vdc AC 1Vac 
+R_R3         N03860 N03882  {Rvalue} TC=0,0 
+C_C4         N04032 N03882  110n  TC=0,0 
+C_C2         N03952 N03860  110n  TC=0,0 
+R_R1         IN N03860  {Rvalue} TC=0,0 
+C_C3         N03860 N03952  110n  TC=0,0 
+R_R4         N03952 N04032  {Rvalue} TC=0,0 
+X_U1A         N03882 OUT VCC VSS OUT AD648A
+X_U1B         N05718 N03952 VCC VSS N03952 AD648A
+X_R6         OUT N05718 0 POT PARAMS: SET={ratio} VALUE=100k
+.PARAM  rvalue=27k ratio=0.5
