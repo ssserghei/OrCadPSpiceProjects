@@ -1,7 +1,7 @@
 
-**** 04/20/21 22:41:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/21/21 11:33:18 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-DC_Bias"  [ d:\github\orcadpspiceprojects\008_n-channeldrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
+ ** Profile: "SCHEMATIC1-DC_Bias"  [ D:\GitHub\OrCadPSpiceProjects\008_N-ChannelDrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
 
 
  ****     CIRCUIT DESCRIPTION
@@ -18,7 +18,7 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of D:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of F:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
@@ -31,33 +31,34 @@
 **** INCLUDING SCHEMATIC1.net ****
 * source 008_N-CHANNELDRIVE
 V_V1         +5V 0 +5Vdc
-X_Q1         N00351 N02158 +12V awb2n4125 PARAMS:                              
+X_Q1         N00351 N05042 +12V awb2n4125 PARAMS:                              
 +               
-V_V2         +12V 0 +12Vdc
+V_V2         +12V 0 +10Vdc
 R_R2         0 N00351  5k TC=0,0 
 R_R3         N00436 +12V  3 TC=0,0 
 R_R4         N00545 N00351  1k TC=0,0 
 R_R6         +5V 0  5k TC=0,0 
 M_M1         N00436 N00545 0 0 M2N6755
-R_R7         +12V N00745  10k TC=0,0 
-R_R8         N00745 0  100k TC=0,0 
-R_R5         0 +5V  5k TC=0,0 
-R_R9         N00745 N02158  1k TC=0,0 
 R_R13         N02912 N02904  1k TC=0,0 
-R_R12         N02758 N02828  1k TC=0,0 
-R_R14         N02758 0  10k TC=0,0 
+R_R12         N06374 N02824  20k TC=0,0 
+R_R14         N02824 0  100k TC=0,0 
 R_R11         N02812 +12V  3 TC=0,0 
-R_R10         +12V N02758  10k TC=0,0 
 R_R15         0 N02904  5k TC=0,0 
 M_M3         N02812 N02912 0 0 M2N6755
-X_M5         N02904 N02828 +12V BSO613SPV/L1/INF
+X_M5         N02904 N02824 +12V BSO613SPV/L1/INF
+R_R16         N05042 +12V  10k TC=0,0 
+R_R18         +5V +5V  500 TC=0,0 
+R_R10         +12V N02824  7.5k TC=0,0 
+R_R19         N06374 0  7k TC=0,0 
+R_R20         +5V 0  5k TC=0,0 
+R_R21         +5V 0  500 TC=0,0 
 
 **** RESUMING DC_Bias.cir ****
 .END
 
-**** 04/20/21 22:41:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/21/21 11:33:18 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-DC_Bias"  [ d:\github\orcadpspiceprojects\008_n-channeldrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
+ ** Profile: "SCHEMATIC1-DC_Bias"  [ D:\GitHub\OrCadPSpiceProjects\008_N-ChannelDrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
 
 
  ****     BJT MODEL PARAMETERS
@@ -110,9 +111,9 @@ X_M5         N02904 N02828 +12V BSO613SPV/L1/INF
            D     .52         
 
 
-**** 04/20/21 22:41:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/21/21 11:33:18 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-DC_Bias"  [ d:\github\orcadpspiceprojects\008_n-channeldrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
+ ** Profile: "SCHEMATIC1-DC_Bias"  [ D:\GitHub\OrCadPSpiceProjects\008_N-ChannelDrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
 
 
  ****     MOSFET MODEL PARAMETERS
@@ -163,9 +164,9 @@ X_M5         N02904 N02828 +12V BSO613SPV/L1/INF
        XPART    0            
 
 
-**** 04/20/21 22:41:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/21/21 11:33:18 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-DC_Bias"  [ d:\github\orcadpspiceprojects\008_n-channeldrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
+ ** Profile: "SCHEMATIC1-DC_Bias"  [ D:\GitHub\OrCadPSpiceProjects\008_N-ChannelDrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -178,15 +179,15 @@ X_M5         N02904 N02828 +12V BSO613SPV/L1/INF
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(  +5V)    5.0000  ( +12V)   12.0000  (N00351)   11.8790 (N00436)     .7348     
+(  +5V)    5.0000  ( +12V)   10.0000  (N00351) 69.39E-09 (N00436)   10.0000     
 
-(N00545)   11.8790 (N00745)   11.2690 (N02158)   11.3080 (N02758)    6.0000     
+(N00545) 69.39E-09 (N02812)   10.0000 (N02824)    7.3922 (N02904)     .0787     
 
-(N02812)     .7343 (N02828)    6.0000 (N02904)   12.0000 (N02912)   12.0000     
+(N02912)     .0787 (N05042)   10.0000 (N06374)    1.9165 (X_M5.d)     .0787     
 
-(X_M5.d)   12.0000 (X_M5.g)    6.0000 (X_M5.s)   12.0000 (X_M5.dr1)   12.0000   
+(X_M5.g)    7.3922 (X_M5.s)   10.0000 (X_M5.dr1)     .0787                      
 
-(X_M5.ga1)    6.0000                  (X_M5.so1)   12.0000                  
+(X_M5.ga1)    7.3922                  (X_M5.so1)   10.0000                  
 
 
 
@@ -194,18 +195,18 @@ X_M5         N02904 N02828 +12V BSO613SPV/L1/INF
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V1        -2.000E-03
-    V_V2        -7.516E+00
+    V_V1        -1.200E-02
+    V_V2        -3.968E-04
 
-    TOTAL POWER DISSIPATION   9.02E+01  WATTS
+    TOTAL POWER DISSIPATION   6.40E-02  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 04/20/21 22:41:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/21/21 11:33:18 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-DC_Bias"  [ d:\github\orcadpspiceprojects\008_n-channeldrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
+ ** Profile: "SCHEMATIC1-DC_Bias"  [ D:\GitHub\OrCadPSpiceProjects\008_N-ChannelDrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
 
 
  ****     JOB STATISTICS SUMMARY
@@ -215,6 +216,6 @@ X_M5         N02904 N02828 +12V BSO613SPV/L1/INF
 
 
 
-  License check-out time            =       11.49
-  Total job time (using Solver 1)   =         .22
+  License check-out time            =       10.56
+  Total job time (using Solver 1)   =         .05
 
