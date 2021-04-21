@@ -1,0 +1,22 @@
+* source 008_N-CHANNELDRIVE
+V_V1         +5V 0 +5Vdc
+X_Q1         N00351 N02158 +12V awb2n4125 PARAMS:                              
++               
+V_V2         +12V 0 +12Vdc
+R_R2         0 N00351  5k TC=0,0 
+R_R3         N00436 +12V  3 TC=0,0 
+R_R4         N00545 N00351  1k TC=0,0 
+R_R6         +5V 0  5k TC=0,0 
+M_M1         N00436 N00545 0 0 M2N6755
+R_R7         +12V N00745  10k TC=0,0 
+R_R8         N00745 0  100k TC=0,0 
+R_R5         0 +5V  5k TC=0,0 
+R_R9         N00745 N02158  1k TC=0,0 
+R_R13         N02912 N02904  1k TC=0,0 
+R_R12         N02758 N02828  1k TC=0,0 
+R_R14         N02758 0  10k TC=0,0 
+R_R11         N02812 +12V  3 TC=0,0 
+R_R10         +12V N02758  10k TC=0,0 
+R_R15         0 N02904  5k TC=0,0 
+M_M3         N02812 N02912 0 0 M2N6755
+X_M5         N02904 N02828 +12V BSO613SPV/L1/INF
