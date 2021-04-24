@@ -1,5 +1,5 @@
 
-**** 04/21/21 11:33:18 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/23/21 17:35:46 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-DC_Bias"  [ D:\GitHub\OrCadPSpiceProjects\008_N-ChannelDrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
 
@@ -18,7 +18,7 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of F:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
@@ -33,7 +33,7 @@
 V_V1         +5V 0 +5Vdc
 X_Q1         N00351 N05042 +12V awb2n4125 PARAMS:                              
 +               
-V_V2         +12V 0 +10Vdc
+V_V2         +12V 0 +12Vdc
 R_R2         0 N00351  5k TC=0,0 
 R_R3         N00436 +12V  3 TC=0,0 
 R_R4         N00545 N00351  1k TC=0,0 
@@ -52,11 +52,38 @@ R_R10         +12V N02824  7.5k TC=0,0
 R_R19         N06374 0  7k TC=0,0 
 R_R20         +5V 0  5k TC=0,0 
 R_R21         +5V 0  500 TC=0,0 
+X_D1         0 0 MMSZ5231BT1
+R_R22         N09294 N09119  2k TC=0,0 
+V_V3         N09119 0 +12Vdc
+R_R23         0 N09294  1k TC=0,0 
 
 **** RESUMING DC_Bias.cir ****
 .END
 
-**** 04/21/21 11:33:18 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/23/21 17:35:46 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC_Bias"  [ D:\GitHub\OrCadPSpiceProjects\008_N-ChannelDrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D1.FWD_DIO    X_D1.MD_REV     X_D1.MD_REV2    
+          IS    1.784150E-09    2.500000E-12    2.500000E-12 
+           N    2.00311          .114452         .274444     
+          RS     .409                                        
+          TT   10.000000E-09                                 
+         CJO  170.000000E-12                                 
+          EG                     .1              .1          
+         XTI    1               0               0            
+
+
+**** 04/23/21 17:35:46 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-DC_Bias"  [ D:\GitHub\OrCadPSpiceProjects\008_N-ChannelDrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
 
@@ -111,7 +138,7 @@ R_R21         +5V 0  500 TC=0,0
            D     .52         
 
 
-**** 04/21/21 11:33:18 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/23/21 17:35:46 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-DC_Bias"  [ D:\GitHub\OrCadPSpiceProjects\008_N-ChannelDrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
 
@@ -164,7 +191,25 @@ R_R21         +5V 0  500 TC=0,0
        XPART    0            
 
 
-**** 04/21/21 11:33:18 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/23/21 17:35:46 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC_Bias"  [ D:\GitHub\OrCadPSpiceProjects\008_N-ChannelDrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D1.MDR        X_D1.MDRBRK_SIg 
+           R    1               1            
+         TC1                  235.532000E-06 
+
+
+**** 04/23/21 17:35:46 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-DC_Bias"  [ D:\GitHub\OrCadPSpiceProjects\008_N-ChannelDrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
 
@@ -179,15 +224,19 @@ R_R21         +5V 0  500 TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(  +5V)    5.0000  ( +12V)   10.0000  (N00351) 69.39E-09 (N00436)   10.0000     
+(  +5V)    5.0000  ( +12V)   12.0000  (N00351) 86.32E-09 (N00436)   12.0000     
 
-(N00545) 69.39E-09 (N02812)   10.0000 (N02824)    7.3922 (N02904)     .0787     
+(N00545) 86.32E-09 (N02812)     .7345 (N02824)    8.8706 (N02904)   11.9610     
 
-(N02912)     .0787 (N05042)   10.0000 (N06374)    1.9165 (X_M5.d)     .0787     
+(N02912)   11.9610 (N05042)   12.0000 (N06374)    2.2998 (N09119)   12.0000     
 
-(X_M5.g)    7.3922 (X_M5.s)   10.0000 (X_M5.dr1)     .0787                      
+(N09294)    4.0000 (X_D1.3)-12.09E-12 (X_D1.4)    -.0748 (X_D1.5)   -4.9802     
 
-(X_M5.ga1)    7.3922                  (X_M5.so1)   10.0000                  
+(X_D1.6)    4.9802 (X_M5.d)   11.9610 (X_M5.g)    8.8706 (X_M5.s)   12.0000     
+
+(X_M5.dr1)   11.9610                  (X_M5.ga1)    8.8706                      
+
+(X_M5.so1)   12.0000                  
 
 
 
@@ -196,15 +245,16 @@ R_R21         +5V 0  500 TC=0,0
     NAME         CURRENT
 
     V_V1        -1.200E-02
-    V_V2        -3.968E-04
+    V_V2        -3.758E+00
+    V_V3        -4.000E-03
 
-    TOTAL POWER DISSIPATION   6.40E-02  WATTS
+    TOTAL POWER DISSIPATION   4.52E+01  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 04/21/21 11:33:18 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 04/23/21 17:35:46 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-DC_Bias"  [ D:\GitHub\OrCadPSpiceProjects\008_N-ChannelDrive\008_n-channeldrive-pspicefiles\schematic1\dc_bi
 
@@ -216,6 +266,5 @@ R_R21         +5V 0  500 TC=0,0
 
 
 
-  License check-out time            =       10.56
-  Total job time (using Solver 1)   =         .05
+  Total job time (using Solver 1)   =         .34
 

@@ -1,3 +1,4 @@
- lib="f:\program files\cadence\spb_17.4\tools\PSpice\Library\pwrmos.lib", offset=4424, size=330
- lib="f:\program files\cadence\spb_17.4\tools\PSpice\Library\bjp.lib", offset=106315, size=1468
- lib="f:\program files\cadence\spb_17.4\tools\PSpice\Library\Infineon.lib", offset=2055074, size=3632
+ lib=c:\cadence\spb_17.2\tools\PSpice\Library\pwrmos.lib, offset=4424, size=330
+ lib=c:\cadence\spb_17.2\tools\PSpice\Library\bjp.lib, offset=106315, size=1468
+ lib=c:\cadence\spb_17.2\tools\PSpice\Library\infineon.lib, offset=2053669, size=3632
+ lib=c:\cadence\spb_17.2\tools\PSpice\Library\on_zener.lib, offset=3396, size=561
