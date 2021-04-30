@@ -1,0 +1,6 @@
+ lib="D:\Program Files\Cadence\SPB_17.4\tools\PSpice\Library\pwrmos.lib", offset=4424, size=330
+ lib="D:\Program Files\Cadence\SPB_17.4\tools\PSpice\Library\bjp.lib", offset=106315, size=1468
+ lib="D:\Program Files\Cadence\SPB_17.4\tools\PSpice\Library\Infineon.lib", offset=2055074, size=3632
+ lib="D:\Program Files\Cadence\SPB_17.4\tools\PSpice\Library\opt.lib", offset=3215, size=808
+ lib="D:\Program Files\Cadence\SPB_17.4\tools\PSpice\Library\opt.lib", offset=26708, size=964
+ lib="D:\Program Files\Cadence\SPB_17.4\tools\PSpice\Library\templates.lib", offset=1513011, size=7004

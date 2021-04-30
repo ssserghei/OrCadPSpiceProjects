@@ -1,0 +1,8 @@
+* source 007_STIMULUS
+V_V1         N00232 0   STIMULUS=StimulU1
+R_R1         N00232 0  1k TC=0,0 
+V_V2         N00720 0  
++PULSE 0V 10V 1us 1us 1us 10us 30us
+R_R2         N00720 0  1k TC=0,0 
+R_R3         N01011 0  1k TC=0,0 
+I_I1         N01011 0   STIMULUS=Isimul

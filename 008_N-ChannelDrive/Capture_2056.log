@@ -1,0 +1,9 @@
+[2021-04-21T21:37:52.148+0300] [2056] [7756] [Maxim] [Capture.exe] [] [SSSNooteLegion] [CDSPulseStateHandler::CDSPulseStateHandler] [DEBUG] - Creating CDSPulseStateHandler.
+[2021-04-21T21:37:52.149+0300] [2056] [7756] [Maxim] [Capture.exe] [] [SSSNooteLegion] [CDSPulseManager::startSync] [DEBUG] - Param received is conf explore
+[2021-04-21T21:37:52.149+0300] [2056] [7756] [Maxim] [Capture.exe] [] [SSSNooteLegion] [CDSPulseManager::startSync] [DEBUG] - Handle start server synchronously.
+[2021-04-21T21:37:52.149+0300] [2056] [7756] [Maxim] [Capture.exe] [] [SSSNooteLegion] [CDSPulseManager::startSync] [DEBUG] - Sending server start event to health state handler.
+[2021-04-21T21:37:52.150+0300] [2056] [7756] [Maxim] [Capture.exe] [] [SSSNooteLegion] [PulseStartEvent::PulseStartEvent] [DEBUG] - Creating pulse start event.
+[2021-04-21T21:37:52.150+0300] [2056] [7756] [Maxim] [Capture.exe] [] [SSSNooteLegion] [PulseStateNoServer::handleEvent] [DEBUG] - Start event received.
+[2021-04-21T21:37:52.152+0300] [2056] [7756] [Maxim] [Capture.exe] [] [SSSNooteLegion] [CDSPulseManagerImpl::getInitJsonFileLocation] [DEBUG] - Creating json file pathC:/Users/Maxim/AppData/Local/Temp\pulse_stage_Maxim_2056\sjson
+[2021-04-21T21:37:52.152+0300] [2056] [7756] [Maxim] [Capture.exe] [] [SSSNooteLegion] [CDSPulseManagerImpl::launchInitTranslateServer] [DEBUG] - Launching Init Translate Server.
+[2021-04-21T21:37:52.153+0300] [2056] [7756] [Maxim] [Capture.exe] [] [SSSNooteLegion] [CDSPulseManagerImpl::launchInitTranslateServer] [DEBUG] - Init translate server command is D:\Program Files\Cadence\SPB_17.4\tools/pcbdw/bin\translate.bat -parent "2056" -parentlocation "C:/Users/Maxim/AppData/Local/Temp\pulse_stage_Maxim_2056\sjson" -appname "orcad" -conf "explore"

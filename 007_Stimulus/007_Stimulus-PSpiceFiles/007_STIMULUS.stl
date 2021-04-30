@@ -1,0 +1,14 @@
+* d:\github\orcadpspiceprojects\007_stimulus\007_stimulus-PSpiceFiles\007_STIMULUS.stl written on Sat Apr 24 19:58:01 2021
+* by Stimulus Editor -- Serial Number: 0 -- Version 17.4.0
+;!Stimulus Get
+;! Simulus1 Analog StimulU1 Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 80us
+;!Yrange 0 10
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Simulus1 EXP( 0 10 10u 5u 40u 5u )
+.STIMULUS StimulU1 EXP( 0 10 10u 5u 50u 10u )

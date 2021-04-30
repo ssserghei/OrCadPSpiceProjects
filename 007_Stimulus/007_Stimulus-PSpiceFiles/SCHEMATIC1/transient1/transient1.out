@@ -1,0 +1,112 @@
+
+**** 04/28/21 23:05:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient1"  [ d:\github\orcadpspiceprojects\007_stimulus\007_stimulus-pspicefiles\schematic1\transient1.sim
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "transient1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "d:\github\orcadpspiceprojects\007_stimulus\007_stimulus-pspicefiles\schematic1\transient1\transient1_profile.inc" 
+* Local Libraries :
+
+**** INCLUDING transient1_profile.inc ****
+.STMLIB ".\transient1.stl" 
+
+**** RESUMING transient1.cir ****
+.STMLIB "../../../007_stimulus-pspicefiles/007_stimulus.stl" 
+* From [PSPICE NETLIST] section of D:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 500us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 007_STIMULUS
+V_V1         N00232 0   STIMULUS=StimulU1
+R_R1         N00232 0  1k TC=0,0 
+V_V2         N00720 0  
++PULSE 0V 10V 1us 1us 1us 10us 30us
+R_R2         N00720 0  1k TC=0,0 
+R_R3         N01011 0  1k TC=0,0 
+I_I1         N01011 0   STIMULUS=Isimul
+
+**** RESUMING transient1.cir ****
+.END
+* d:\github\orcadpspiceprojects\007_stimulus\007_stimulus-PSpiceFiles\SCHEMATIC1\transient1\transient1.stl written on Wed Apr 28 22:56:55 2021
+* by Stimulus Editor -- Serial Number: 0 -- Version 17.4.0
+;!Stimulus Get
+;! Ipulse Analog Isimul Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 650us
+;!Yrange 0 100u
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Ipulse PULSE( 0 100uA 10u 10u 20u 100u 200u )
+.STIMULUS Isimul PULSE( 0 100uA 10u 10u 20u 100u 200u )
+
+**** 04/28/21 23:05:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient1"  [ d:\github\orcadpspiceprojects\007_stimulus\007_stimulus-pspicefiles\schematic1\transient1.sim
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00232)    0.0000 (N00720)    0.0000 (N01011)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/28/21 23:05:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient1"  [ d:\github\orcadpspiceprojects\007_stimulus\007_stimulus-pspicefiles\schematic1\transient1.sim
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        1.17
+  Total job time (using Solver 1)   =         .02
+
