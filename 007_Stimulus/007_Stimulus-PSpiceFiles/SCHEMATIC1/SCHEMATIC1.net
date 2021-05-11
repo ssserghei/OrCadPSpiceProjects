@@ -6,3 +6,7 @@ V_V2         N00720 0
 R_R2         N00720 0  1k TC=0,0 
 R_R3         N01011 0  1k TC=0,0 
 I_I1         N01011 0   STIMULUS=Isimul
+V_V3         N01823 0   STIMULUS=StimulSinus
+R_R4         N01823 0  1k TC=0,0 
+V_V4         N02093 0   STIMULUS=FMSinus
+R_R5         N02093 0  1k TC=0,0 

@@ -1,0 +1,6 @@
+* source 010_PWL_STIMULTEXTFILE
+R_R1         0 0  1k TC=0,0 
+R_R2         0 0  1k TC=0,0 
+V_V2         OUT 0  AC 0
++SIN 0V 1V 1kHz 0 0 0
+R_R3         0 OUT  1k TC=0,0 

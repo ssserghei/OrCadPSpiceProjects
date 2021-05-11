@@ -1,6 +1,6 @@
 (ExpressProject "007_Stimulus"
   (ProjectVersion "19981106")
-  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[04/28/21]")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[05/01/21]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
@@ -26,12 +26,7 @@
         (DisplayName "SCHEMATIC1-transient1")
         (Type "PSpice Profile"))
       (Folder "SCHEMATIC1-transient1_Configuration"
-        (Folder "Profile Stimulus Files"
-          (File
-             ".\007_stimulus-pspicefiles\schematic1\transient1\transient1.stl"
-            (Type "PSpiceLibrary")
-            (DisplayName
-               ".\007_stimulus-pspicefiles\schematic1\transient1\transient1.stl")))))
+        (Folder "Profile Stimulus Files")))
     (Folder "Model Libraries"
       (Sort User))
     (Folder "Stimulus Files"
@@ -44,6 +39,16 @@
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (Folder "Logs")
   (PartMRUSelector
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName
+         "D:\PROGRAM FILES\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "D:\PROGRAM FILES\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
     (VPWL
       (FullPartName "VPWL.Normal")
       (LibraryName
@@ -77,42 +82,25 @@
       (FullPartName "DigStim1.Normal")
       (LibraryName
          "D:\PROGRAM FILES\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCSTM.OLB")
-      (DeviceIndex "0"))
-    (VSTIM
-      (FullPartName "VSTIM.Normal")
-      (LibraryName
-         "D:\PROGRAM FILES\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCSTM.OLB")
       (DeviceIndex "0")))
   (LastUsedLibraryBrowseDirectory
      "D:\Program Files\Cadence\SPB_17.4\tools\capture\library\pspice")
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "d:\github\orcadpspiceprojects\007_stimulus\007_stimulus.dsn")
-      (Path "Design Resources"
-         "d:\github\orcadpspiceprojects\007_stimulus\007_stimulus.dsn"
-         "SCHEMATIC1")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Simulation Profiles")
+      (Path "PSpice Resources" "Simulation Profiles"
+         "SCHEMATIC1-transient1_Configuration")
+      (Path "PSpice Resources" "Simulation Profiles"
+         "SCHEMATIC1-transient1_Configuration" "Profile Stimulus Files")
       (Path "PSpice Resources" "Stimulus Files")
-      (Select "PSpice Resources" "Simulation Profiles"
-         "d:\github\orcadpspiceprojects\007_stimulus\007_stimulus-pspicefiles\schematic1\transient1.sim"))
+      (Select "Design Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 323 0 754"))
-      (Tab 0))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 2 3 -1 -1 5 24 5 998 24 772")
-        (Scroll "0 0")
-        (Zoom "196")
-        (Occurrence "/"))
-      (Path "D:\GITHUB\ORCADPSPICEPROJECTS\007_STIMULUS\007_STIMULUS.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "PAGE1")))
+        (Placement "44 0 1 -1 -1 -1 -1 0 208 0 676"))
+      (Tab 0)))
   (MPSSessionName "Maxim"))

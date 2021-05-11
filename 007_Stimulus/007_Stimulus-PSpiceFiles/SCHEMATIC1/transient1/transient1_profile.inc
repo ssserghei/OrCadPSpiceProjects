@@ -1,1 +1,1 @@
-.STMLIB	".\transient1.stl" 
+.STMLIB	"./transient1.stl" 

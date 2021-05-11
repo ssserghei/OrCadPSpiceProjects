@@ -1,0 +1,87 @@
+
+**** 05/09/21 15:45:19 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ D:\GitHub\OrCadPSpiceProjects\010_PWL_StimulTextFile\010_pwl_stimultextfile-pspicefiles\schema
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "transient.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 {schedule(0,0, 2m,0.05m, 4m,0.01m, 6m,0.005m, 8m,0.001m)} 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 010_PWL_STIMULTEXTFILE
+R_R1         0 0  1k TC=0,0 
+R_R2         0 0  1k TC=0,0 
+V_V2         OUT 0  AC 0
++SIN 0V 1V 1kHz 0 0 0
+R_R3         0 OUT  1k TC=0,0 
+
+**** RESUMING transient.cir ****
+.END
+
+**** 05/09/21 15:45:19 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ D:\GitHub\OrCadPSpiceProjects\010_PWL_StimulTextFile\010_pwl_stimultextfile-pspicefiles\schema
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/09/21 15:45:19 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ D:\GitHub\OrCadPSpiceProjects\010_PWL_StimulTextFile\010_pwl_stimultextfile-pspicefiles\schema
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

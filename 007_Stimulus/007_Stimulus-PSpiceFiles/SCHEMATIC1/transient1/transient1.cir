@@ -8,7 +8,7 @@
 .INC "d:\github\orcadpspiceprojects\007_stimulus\007_stimulus-pspicefiles\schematic1\transient1\transient1_profile.inc" 
 * Local Libraries :
 .STMLIB "../../../007_stimulus-pspicefiles/007_stimulus.stl" 
-* From [PSPICE NETLIST] section of D:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 

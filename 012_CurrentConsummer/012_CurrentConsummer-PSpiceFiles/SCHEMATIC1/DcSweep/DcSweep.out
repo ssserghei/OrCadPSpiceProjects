@@ -1,0 +1,240 @@
+
+**** 05/09/21 21:29:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DcSweep"  [ D:\GitHub\OrCadPSpiceProjects\012_CurrentConsummer\012_CurrentConsummer-PSpiceFiles\SCHEMATIC1\D
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DcSweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V3 0 3.3V 0.1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 012_CURRENTCONSUMMER
+R_R1         0 N00515  13 TC=0,0 
+X_U1         N00795 N00515 VCC 0 N00542 AD8541/AD
+V_V1         VCC 0 3.3Vdc
+V_V2         N00814 0 4
+R_R2         N00814 N00503  0.5 TC=0,0 
+V_V3         N04484 0 2Vdc
+R_R3         N00795 N04484  1k TC=0,0 
+Q_Q2         N00503 N06370 N00515 Q2SC3076 
+R_R4         0 N01825  1k TC=0,0 
+Q_Q3         N01795 N01821 N01825 Q2SC3076 
+R_R5         N01795 VCC  1k TC=0,0 
+X_U2         N02927 N01825 VCC 0 N01821 AD8541/AD
+R_R6         N02927 N02881  1k TC=0,0 
+V_V4         N02881 0 3.3Vdc
+R_R7         N00795 0  3k TC=0,0 
+R_R8         N06370 N00542  100 TC=0,0 
+
+**** RESUMING DcSweep.cir ****
+.END
+
+**** 05/09/21 21:29:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DcSweep"  [ D:\GitHub\OrCadPSpiceProjects\012_CurrentConsummer\012_CurrentConsummer-PSpiceFiles\SCHEMATIC1\D
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.DX         X_U2.DX         
+          IS   10.000000E-15   10.000000E-15 
+
+
+**** 05/09/21 21:29:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DcSweep"  [ D:\GitHub\OrCadPSpiceProjects\012_CurrentConsummer\012_CurrentConsummer-PSpiceFiles\SCHEMATIC1\D
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2SC3076        
+               NPN             
+       LEVEL    1            
+          IS    6.089700E-15 
+          BF  155.61         
+          NF    1            
+         VAF  100            
+         IKF    4.1218       
+         ISE   51.313000E-15 
+          NE    1.5655       
+          BR   13.89         
+          NR    1            
+         VAR  100            
+         IKR     .66343      
+         ISC   78.587000E-15 
+          NC    1.288        
+          NK     .42345      
+         ISS    0            
+          RE    0            
+          RC     .08025      
+         CJE    2.000000E-12 
+         VJE     .75         
+         CJC   72.874000E-12 
+         VJC     .75         
+         MJC     .33333      
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  815.540000E-12 
+         XTF   10            
+         VTF   10            
+         ITF    1            
+          TR  159.250000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 05/09/21 21:29:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DcSweep"  [ D:\GitHub\OrCadPSpiceProjects\012_CurrentConsummer\012_CurrentConsummer-PSpiceFiles\SCHEMATIC1\D
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.POX        X_U1.NOX        X_U1.PIX        X_U1.NIX        
+               PMOS            NMOS            PMOS            NMOS            
+       LEVEL    2               2               2               2            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO   -1               1               -.7              .7          
+          KP   20.000000E-06   20.000000E-06   20.000000E-06   20.000000E-06 
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA     .067            .067            .01             .01         
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX  100.000000E-09  100.000000E-09  100.000000E-09  100.000000E-09 
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+          KF                                    0               0            
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_U2.POX        X_U2.NOX        X_U2.PIX        X_U2.NIX        
+               PMOS            NMOS            PMOS            NMOS            
+       LEVEL    2               2               2               2            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO   -1               1               -.7              .7          
+          KP   20.000000E-06   20.000000E-06   20.000000E-06   20.000000E-06 
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA     .067            .067            .01             .01         
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX  100.000000E-09  100.000000E-09  100.000000E-09  100.000000E-09 
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+          KF                                    0               0            
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+**** 05/09/21 21:29:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DcSweep"  [ D:\GitHub\OrCadPSpiceProjects\012_CurrentConsummer\012_CurrentConsummer-PSpiceFiles\SCHEMATIC1\D
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.VSY_SWITCH X_U2.VSY_SWITCH 
+         RON    1               1            
+        ROFF  100.000000E+03  100.000000E+03 
+         VON   -3.5            -3.5          
+        VOFF   -4.2            -4.2          
+
+
+
+          JOB CONCLUDED
+
+**** 05/09/21 21:29:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DcSweep"  [ D:\GitHub\OrCadPSpiceProjects\012_CurrentConsummer\012_CurrentConsummer-PSpiceFiles\SCHEMATIC1\D
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =       25.92
+  Total job time (using Solver 1)   =         .05
+

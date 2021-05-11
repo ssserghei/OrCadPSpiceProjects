@@ -1,0 +1,34 @@
+* D:\GitHub\OrCadPSpiceProjects\009_SimulationProfile_Ex6.3\009_simulationprofile_ex6_3-pspicefiles\009_simulationprofile_ex6_3.stl written on Sun May  2 11:45:41 2021
+* by Stimulus Editor -- Serial Number: 0 -- Version 17.4.0
+;!Stimulus Get
+;! sin100Hz Analog Vin Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 10ms
+;!Yrange -1V 1V
+;!AutoUniverse
+;!XminRes 500us
+;!YminRes 100uV
+;!Ok
+.STIMULUS sin100Hz SIN( 0 1 100Hz 0 0 0 )
+.STIMULUS Vin PWL
++ TIME_SCALE_FACTOR = 1
++ VALUE_SCALE_FACTOR = 1
++   ( 0, 0 )
++   ( 0.0015, 0.2335 )
++   ( 0.002, 0.4188 )
++   ( 0.003, 0.4315 )
++   ( 0.0035, 0.2995 )
++   ( 0.004, 0.1751 )
++   ( 0.0045, 0.1244 )
++   ( 0.005, 0.1294 )
++   ( 0.0055, 0.1574 )
++   ( 0.006, 0.2462 )
++   ( 0.0065, 0.3096 )
++   ( 0.007, 0.4746 )
++   ( 0.0075, 0.5812 )
++   ( 0.008, 0.6497 )
++   ( 0.0085, 0.5914 )
++   ( 0.009, 0.4873 )
++   ( 0.0095, 0.4391 )
++   ( 0.01, 0.4975 )

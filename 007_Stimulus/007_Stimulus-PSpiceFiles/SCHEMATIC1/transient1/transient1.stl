@@ -1,14 +1,16 @@
-* d:\github\orcadpspiceprojects\007_stimulus\007_stimulus-PSpiceFiles\SCHEMATIC1\transient1\transient1.stl written on Wed Apr 28 22:56:55 2021
-* by Stimulus Editor -- Serial Number: 0 -- Version 17.4.0
+* D:\GitHub\OrCadPSpiceProjects\007_Stimulus\007_Stimulus-PSpiceFiles\SCHEMATIC1\transient1\transient1.stl written on Sat May  1 16:45:58 2021
+* by Stimulus Editor -- Serial Number: 825242159 -- Version 17.4.0
 ;!Stimulus Get
-;! Ipulse Analog Isimul Analog
+;! Ipulse Analog Isimul Analog StimulSinus Analog FMSinus Analog
 ;!Ok
 ;!Plot Axis_Settings
 ;!Xrange 0s 650us
-;!Yrange 0 100u
+;!Yrange -1 3
 ;!AutoUniverse
 ;!XminRes 1ns
 ;!YminRes 1n
 ;!Ok
 .STIMULUS Ipulse PULSE( 0 100uA 10u 10u 20u 100u 200u )
 .STIMULUS Isimul PULSE( 0 100uA 10u 10u 20u 100u 200u )
+.STIMULUS StimulSinus SIN( 0 1 10KHz 100u 0 0 )
+.STIMULUS FMSinus SFFM( 2 1 100KHz 7 10KHz )

@@ -1,0 +1,119 @@
+
+**** 05/02/21 13:30:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ D:\GitHub\OrCadPSpiceProjects\009_SimulationProfile_Ex6.3\009_SimulationProfile_Ex6_3-PSpiceFi
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "transient.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.STMLIB "../../../009_simulationprofile_ex6_3-pspicefiles/009_simulationprofile_ex6_3.stl" 
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 009_SIMULATIONPROFILE_EX6_3
+V_V1         OUT 0   STIMULUS=Vin
+R_R1         0 OUT  1k TC=0,0 
+
+**** RESUMING transient.cir ****
+.END
+* D:\GitHub\OrCadPSpiceProjects\009_SimulationProfile_Ex6.3\009_simulationprofile_ex6_3-pspicefiles\009_simulationprofile_ex6_3.stl written on Sun May  2 11:45:41 2021
+* by Stimulus Editor -- Serial Number: 0 -- Version 17.4.0
+;!Stimulus Get
+;! sin100Hz Analog Vin Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 10ms
+;!Yrange -1V 1V
+;!AutoUniverse
+;!XminRes 500us
+;!YminRes 100uV
+;!Ok
+.STIMULUS sin100Hz SIN( 0 1 100Hz 0 0 0 )
+.STIMULUS Vin PWL
++ TIME_SCALE_FACTOR = 1
++ VALUE_SCALE_FACTOR = 1
++   ( 0, 0 )
++   ( 0.0015, 0.2335 )
++   ( 0.002, 0.4188 )
++   ( 0.003, 0.4315 )
++   ( 0.0035, 0.2995 )
++   ( 0.004, 0.1751 )
++   ( 0.0045, 0.1244 )
++   ( 0.005, 0.1294 )
++   ( 0.0055, 0.1574 )
++   ( 0.006, 0.2462 )
++   ( 0.0065, 0.3096 )
++   ( 0.007, 0.4746 )
++   ( 0.0075, 0.5812 )
++   ( 0.008, 0.6497 )
++   ( 0.0085, 0.5914 )
++   ( 0.009, 0.4873 )
++   ( 0.0095, 0.4391 )
++   ( 0.01, 0.4975 )
+
+**** 05/02/21 13:30:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ D:\GitHub\OrCadPSpiceProjects\009_SimulationProfile_Ex6.3\009_SimulationProfile_Ex6_3-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/02/21 13:30:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ D:\GitHub\OrCadPSpiceProjects\009_SimulationProfile_Ex6.3\009_SimulationProfile_Ex6_3-PSpiceFi
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+
