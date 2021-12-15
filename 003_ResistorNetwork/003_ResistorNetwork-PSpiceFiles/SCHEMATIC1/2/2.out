@@ -1,7 +1,7 @@
-
-**** 04/08/21 11:28:30 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-2"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_ResistorNetwork\003_ResistorNetwork-PSpiceFiles\SCHEMA
+**** 11/25/21 19:34:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-2"  [ D:\GitHub\OrCadPSpiceProjects\003_ResistorNetwork\003_resistornetwork-pspicefiles\schematic1\2.sim ] 
 
 
  ****     CIRCUIT DESCRIPTION
@@ -18,7 +18,7 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
@@ -31,17 +31,60 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source 003_RESISTORNETWORK
-V_V1         IN 0 10Vdc
+V_Vsupply         IN 0 10Vdc
 R_R1         IN OUT  10R TC=0,0 
 R_R2         0 OUT  10R TC=0,0 
 C_C1         0 OUT  1n  TC=0,0 
+I_I1         0 N01415 DC 0Adc  
+R_R3         N01415 N01422  100k TC=0,0 
+R_R4         N01426 N01430  10R TC=0,0 
+V_VCE         N01430 0 12V
+Q_Q1         N01426 N01422 0 QbreakN 
 
 **** RESUMING 2.cir ****
 .END
 
-**** 04/08/21 11:28:30 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/25/21 19:34:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-2"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_ResistorNetwork\003_ResistorNetwork-PSpiceFiles\SCHEMA
+ ** Profile: "SCHEMATIC1-2"  [ D:\GitHub\OrCadPSpiceProjects\003_ResistorNetwork\003_resistornetwork-pspicefiles\schematic1\2.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         
+               NPN             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 11/25/21 19:34:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-2"  [ D:\GitHub\OrCadPSpiceProjects\003_ResistorNetwork\003_resistornetwork-pspicefiles\schematic1\2.sim ] 
 
 
  ****     CIRCUIT ELEMENT SUMMARY
@@ -60,6 +103,8 @@ NAME               NODES      MODEL     VALUE       TC1       TC2       TCE
 
 R_R1            IN     OUT             1.00E+01 
 R_R2             0     OUT             1.00E+01 
+R_R3        N01415  N01422             1.00E+05 
+R_R4        N01426  N01430             1.00E+01 
 
 
 **** CAPACITORS
@@ -73,13 +118,24 @@ C_C1             0     OUT             1.00E-09
 
 NAME               NODES    DC VALUE  AC VALUE  AC PHASE
 
-V_V1            IN       0  1.00E+01  0.00E+00  0.00E+00  degrees
+V_Vsupply       IN       0  1.00E+01  0.00E+00  0.00E+00  degrees
 
+V_VCE       N01430       0  1.20E+01  0.00E+00  0.00E+00  degrees
+
+I_I1             0  N01415  0.00E+00  0.00E+00  0.00E+00  degrees
+
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+NAME             C       B       E       S MODEL         AREA
+
+Q_Q1        N01426  N01422       0       0 QbreakN     1.00E+00 
 
 
-**** 04/08/21 11:28:30 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/25/21 19:34:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-2"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_ResistorNetwork\003_ResistorNetwork-PSpiceFiles\SCHEMA
+ ** Profile: "SCHEMATIC1-2"  [ D:\GitHub\OrCadPSpiceProjects\003_ResistorNetwork\003_resistornetwork-pspicefiles\schematic1\2.sim ] 
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -92,7 +148,9 @@ V_V1            IN       0  1.00E+01  0.00E+00  0.00E+00  degrees
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(   IN)   10.0000  (  OUT)    5.0000  
+(   IN)   10.0000  (  OUT)    5.0000  (N01415)     .4197 (N01422)     .4197     
+
+(N01426)   12.0000 (N01430)   12.0000 
 
 
 
@@ -100,7 +158,8 @@ V_V1            IN       0  1.00E+01  0.00E+00  0.00E+00  degrees
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V1        -5.000E-01
+    V_Vsupply   -5.000E-01
+    V_VCE       -1.139E-09
 
     TOTAL POWER DISSIPATION   5.00E+00  WATTS
 
@@ -108,9 +167,9 @@ V_V1            IN       0  1.00E+01  0.00E+00  0.00E+00  degrees
 
           JOB CONCLUDED
 
-**** 04/08/21 11:28:30 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/25/21 19:34:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-2"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_ResistorNetwork\003_ResistorNetwork-PSpiceFiles\SCHEMA
+ ** Profile: "SCHEMATIC1-2"  [ D:\GitHub\OrCadPSpiceProjects\003_ResistorNetwork\003_resistornetwork-pspicefiles\schematic1\2.sim ] 
 
 
  ****     JOB STATISTICS SUMMARY
@@ -120,5 +179,5 @@ V_V1            IN       0  1.00E+01  0.00E+00  0.00E+00  degrees
 
 
 
-  Total job time (using Solver 1)   =        0.00
+  Total job time (using Solver 1)   =         .02
 

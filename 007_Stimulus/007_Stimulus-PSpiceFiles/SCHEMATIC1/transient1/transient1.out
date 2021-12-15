@@ -1,7 +1,7 @@
+
+**** 11/25/21 19:39:17 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
-**** 05/02/21 11:17:51 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
-
- ** Profile: "SCHEMATIC1-transient1"  [ d:\github\orcadpspiceprojects\007_stimulus\007_stimulus-pspicefiles\schematic1\transient1.sim
+ ** Profile: "SCHEMATIC1-transient1"  [ D:\GitHub\OrCadPSpiceProjects\007_Stimulus\007_stimulus-pspicefiles\schematic1\transient1.sim
 
 
  ****     CIRCUIT DESCRIPTION
@@ -17,7 +17,7 @@
 
 *Libraries: 
 * Profile Libraries :
-.INC "d:\github\orcadpspiceprojects\007_stimulus\007_stimulus-pspicefiles\schematic1\transient1\transient1_profile.inc" 
+.INC "D:\GitHub\OrCadPSpiceProjects\007_Stimulus\007_stimulus-pspicefiles\schematic1\transient1\transient1_profile.inc" 
 * Local Libraries :
 
 **** INCLUDING transient1_profile.inc ****
@@ -69,9 +69,9 @@ R_R5         N02093 0  1k TC=0,0
 .STIMULUS StimulSinus SIN( 0 1 10KHz 100u 0 0 )
 .STIMULUS FMSinus SFFM( 2 1 100KHz 7 10KHz )
 
-**** 05/02/21 11:17:51 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/25/21 19:39:17 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-transient1"  [ d:\github\orcadpspiceprojects\007_stimulus\007_stimulus-pspicefiles\schematic1\transient1.sim
+ ** Profile: "SCHEMATIC1-transient1"  [ D:\GitHub\OrCadPSpiceProjects\007_Stimulus\007_stimulus-pspicefiles\schematic1\transient1.sim
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -105,9 +105,9 @@ R_R5         N02093 0  1k TC=0,0
 
           JOB CONCLUDED
 
-**** 05/02/21 11:17:51 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/25/21 19:39:17 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-transient1"  [ d:\github\orcadpspiceprojects\007_stimulus\007_stimulus-pspicefiles\schematic1\transient1.sim
+ ** Profile: "SCHEMATIC1-transient1"  [ D:\GitHub\OrCadPSpiceProjects\007_Stimulus\007_stimulus-pspicefiles\schematic1\transient1.sim
 
 
  ****     JOB STATISTICS SUMMARY
@@ -117,5 +117,6 @@ R_R5         N02093 0  1k TC=0,0
 
 
 
-  Total job time (using Solver 1)   =         .03
+  License check-out time            =        1.80
+  Total job time (using Solver 1)   =         .02
 

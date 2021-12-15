@@ -1,0 +1,142 @@
+
+**** 06/20/21 19:13:37 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DcBias"  [ D:\GitHub\OrCadPSpiceProjects\013_OperationalAmplifier\013_OperationalAmplifier-PSpiceFiles\SCHEM
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DcBias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 013_OPERATIONALAMPLIFIER
+E_U1         N00925 0 VALUE {LIMIT(V(N00964,N00874)*1E6,-15V,+15V)}
+V_V3         N00964 0 4Vdc
+R_R3         N00925 N00874  10k TC=0,0 
+R_R4         N00874 0  10k TC=0,0 
+R_R5         N00964 N00964  20k TC=0,0 
+R_R8         N01282 0  4k TC=0,0 
+V_V4         N01266 0 3Vdc
+R_R6         N01266 N01276  2k TC=0,0 
+R_R9         N01266 N01296  5k TC=0,0 
+R_R10         0 N01296  10k TC=0,0 
+R_R7         N01276 N01282  8k TC=0,0 
+E_U2         N01282 0 VALUE {LIMIT(V(N01296,N01276)*1E6,-15V,+15V)}
+V_V5         N02576 0 1.2Vdc
+R_R12         N02576 N02518  1k TC=0,0 
+R_R11         N02518 N02528  4k TC=0,0 
+E_U3         N02528 0 VALUE {LIMIT(V(N02644,N02518)*1E6,-15V,+15V)}
+R_R14         0 N02644  4k TC=0,0 
+R_R13         N02644 N02528  2k TC=0,0 
+V_V6         N03726 0 1Vdc
+R_R16         N03726 N03738  10k TC=0,0 
+R_R18         0 N03762  50k TC=0,0 
+E_U4         N03748 0 VALUE {LIMIT(V(N03762,N03738)*1E6,-15V,+15V)}
+R_R17         N03762 N03748  100k TC=0,0 
+R_R19         0 N03738  90k TC=0,0 
+R_R20         0 N03748  10k TC=0,0 
+R_R23         N05204 N05158  100k TC=0,0 
+V_V7         N05130 0 0.9Vdc
+E_U5         N05158 0 VALUE {LIMIT(V(N05204,N05130)*1E6,-15V,+15V)}
+R_R25         0 N05204  50k TC=0,0 
+E_U6         N06001 0 VALUE {LIMIT(V(0,N05985)*1E6,-15V,+15V)}
+V_V8         N05973 0 1Vdc
+R_R26         N05973 N05985  10k TC=0,0 
+R_R31         N07206 N05985  20k TC=0,0 
+V_V9         N07206 0 2Vdc
+V_V10         0 N07213 3Vdc
+R_R32         N07213 N05985  30k TC=0,0 
+R_R33         N06001 N05985  30k TC=0,0 
+E_U7         N08245 0 VALUE {LIMIT(V(N08232,N08245)*1E6,-15V,+15V)}
+V_V11         N08232 0 1Vdc
+R_R34         0 N08245  10k TC=0,0 
+
+**** RESUMING DcBias.cir ****
+.END
+
+**** 06/20/21 19:13:37 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DcBias"  [ D:\GitHub\OrCadPSpiceProjects\013_OperationalAmplifier\013_OperationalAmplifier-PSpiceFiles\SCHEM
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00874)    4.0000 (N00925)    8.0000 (N00964)    4.0000 (N01266)    3.0000     
+
+(N01276)    2.0000 (N01282)   -2.0000 (N01296)    2.0000 (N02518)    1.3714     
+
+(N02528)    2.0571 (N02576)    1.2000 (N02644)    1.3714 (N03726)    1.0000     
+
+(N03738)     .9000 (N03748)    2.7000 (N03762)     .9000 (N05130)     .9000     
+
+(N05158)    2.7000 (N05204)     .9000 (N05973)    1.0000 (N05985) 3.000E-06     
+
+(N06001)   -3.0000 (N07206)    2.0000 (N07213)   -3.0000 (N08232)    1.0000     
+
+(N08245)    1.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         0.000E+00
+    V_V4        -7.000E-04
+    V_V5         1.714E-04
+    V_V6        -1.000E-05
+    V_V7         0.000E+00
+    V_V8        -1.000E-04
+    V_V9        -1.000E-04
+    V_V10       -1.000E-04
+    V_V11        0.000E+00
+
+    TOTAL POWER DISSIPATION   2.50E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 06/20/21 19:13:37 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DcBias"  [ D:\GitHub\OrCadPSpiceProjects\013_OperationalAmplifier\013_OperationalAmplifier-PSpiceFiles\SCHEM
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        2.56
+  Total job time (using Solver 1)   =         .02
+

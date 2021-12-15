@@ -1,7 +1,7 @@
-
-**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+**** 11/25/21 19:59:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AcSweep"  [ d:\github\orcadpspiceprojects\006_ex2notchfilter\006_ex2notchfilter-pspicefiles\schematic1\acswe
 
 
  ****     CIRCUIT DESCRIPTION
@@ -18,7 +18,7 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of D:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
@@ -46,9 +46,9 @@ C_C4         N02707 OUT  110n  TC=0,0
 **** RESUMING AcSweep.cir ****
 .END
 
-**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/25/21 19:59:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+ ** Profile: "SCHEMATIC1-AcSweep"  [ d:\github\orcadpspiceprojects\006_ex2notchfilter\006_ex2notchfilter-pspicefiles\schematic1\acswe
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -76,9 +76,9 @@ C_C4         N02707 OUT  110n  TC=0,0
     TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
 
-**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/25/21 19:59:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+ ** Profile: "SCHEMATIC1-AcSweep"  [ d:\github\orcadpspiceprojects\006_ex2notchfilter\006_ex2notchfilter-pspicefiles\schematic1\acswe
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -106,9 +106,9 @@ C_C4         N02707 OUT  110n  TC=0,0
     TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
 
-**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/25/21 19:59:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+ ** Profile: "SCHEMATIC1-AcSweep"  [ d:\github\orcadpspiceprojects\006_ex2notchfilter\006_ex2notchfilter-pspicefiles\schematic1\acswe
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -136,9 +136,9 @@ C_C4         N02707 OUT  110n  TC=0,0
     TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
 
-**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/25/21 19:59:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+ ** Profile: "SCHEMATIC1-AcSweep"  [ d:\github\orcadpspiceprojects\006_ex2notchfilter\006_ex2notchfilter-pspicefiles\schematic1\acswe
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -166,9 +166,9 @@ C_C4         N02707 OUT  110n  TC=0,0
     TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
 
-**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/25/21 19:59:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+ ** Profile: "SCHEMATIC1-AcSweep"  [ d:\github\orcadpspiceprojects\006_ex2notchfilter\006_ex2notchfilter-pspicefiles\schematic1\acswe
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -196,9 +196,9 @@ C_C4         N02707 OUT  110n  TC=0,0
     TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
 
-**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/25/21 19:59:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+ ** Profile: "SCHEMATIC1-AcSweep"  [ d:\github\orcadpspiceprojects\006_ex2notchfilter\006_ex2notchfilter-pspicefiles\schematic1\acswe
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -226,9 +226,9 @@ C_C4         N02707 OUT  110n  TC=0,0
     TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
 
-**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/25/21 19:59:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+ ** Profile: "SCHEMATIC1-AcSweep"  [ d:\github\orcadpspiceprojects\006_ex2notchfilter\006_ex2notchfilter-pspicefiles\schematic1\acswe
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -259,9 +259,9 @@ C_C4         N02707 OUT  110n  TC=0,0
 
           JOB CONCLUDED
 
-**** 04/18/21 16:15:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/25/21 19:59:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSwe
+ ** Profile: "SCHEMATIC1-AcSweep"  [ d:\github\orcadpspiceprojects\006_ex2notchfilter\006_ex2notchfilter-pspicefiles\schematic1\acswe
 
 
  ****     JOB STATISTICS SUMMARY
@@ -273,6 +273,5 @@ C_C4         N02707 OUT  110n  TC=0,0
 
 
 
-  License check-out time            =         .72
-  Total job time (using Solver 1)   =         .03
+  Total job time (using Solver 1)   =         .06
 

@@ -1,0 +1,5 @@
+* source STIMULUSTEXTFILE
+V_V1         N02994 0   PWL   
++ FILE "<FILE>" 
+R_R1         0 N02994  {Rvalue} TC=0,0 
+.PARAM  rvalue=27k

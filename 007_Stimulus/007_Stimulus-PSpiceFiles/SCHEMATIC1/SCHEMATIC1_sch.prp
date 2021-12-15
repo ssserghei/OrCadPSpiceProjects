@@ -442,7 +442,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"4.000mW")
+                    ("value"	"")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("PSpice Model Type"

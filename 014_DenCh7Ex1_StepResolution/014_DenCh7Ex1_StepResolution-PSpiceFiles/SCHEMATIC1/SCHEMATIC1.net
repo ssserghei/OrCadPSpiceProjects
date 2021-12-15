@@ -1,0 +1,4 @@
+* source 014_DENCH7EX1_STEPRESOLUTION
+R_R1         0 N00078  1k TC=0,0 
+V_V2         N00078 0  AC 0
++SIN 0 1V 1kHz 0 0 0

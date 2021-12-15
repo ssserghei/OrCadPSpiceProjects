@@ -1,0 +1,82 @@
+
+**** 11/25/21 19:29:30 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Test"  [ d:\github\orcadpspiceprojects\dennisfitzpatrickproj\stimulustextfile\stimulustextfile-pspicefiles\s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source STIMULUSTEXTFILE
+V_V1         N02994 0   PWL   
++ FILE "<FILE>" 
+
+ERROR(ORPSIM-15347): Cannot open input file d:\github\orcadpspiceprojects\dennisfitzpatrickproj\stimulustextfile\stimulustextfile-PSpiceFiles\SCHEMATIC1\Test\<FILE>.
+
+
+ABORTING SIMULATION
+**** 11/25/21 19:29:30 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Test"  [ d:\github\orcadpspiceprojects\dennisfitzpatrickproj\stimulustextfile\stimulustextfile-pspicefiles\s
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           1
+  External (NCNODS)                 =           2
+  Total (NUMNOD)                    =           0
+
+Total device count (NUMEL)          =           1
+  Voltage Sources (V)               =           1
+
+Number of subcircuits (X)           =           0
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations
+  Readin                            =        0.00
+  General setup                     =        0.00
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =        1.20
+  Total job time                    =         .30
+

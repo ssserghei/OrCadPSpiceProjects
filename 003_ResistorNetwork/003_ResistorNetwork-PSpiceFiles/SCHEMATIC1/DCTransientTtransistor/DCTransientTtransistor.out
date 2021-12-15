@@ -1,7 +1,7 @@
-
-**** 04/08/21 17:00:51 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-DCTransientTtransistor"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_ResistorNetwork\003_ResistorNetwo
+**** 11/25/21 19:34:39 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DCTransientTtransistor"  [ D:\GitHub\OrCadPSpiceProjects\003_ResistorNetwork\003_resistornetwork-pspicefiles
 
 
  ****     CIRCUIT DESCRIPTION
@@ -18,7 +18,7 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
@@ -45,9 +45,9 @@ Q_Q1         N01426 N01422 0 QbreakN
 **** RESUMING DCTransientTtransistor.cir ****
 .END
 
-**** 04/08/21 17:00:51 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/25/21 19:34:39 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-DCTransientTtransistor"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_ResistorNetwork\003_ResistorNetwo
+ ** Profile: "SCHEMATIC1-DCTransientTtransistor"  [ D:\GitHub\OrCadPSpiceProjects\003_ResistorNetwork\003_resistornetwork-pspicefiles
 
 
  ****     BJT MODEL PARAMETERS
@@ -86,9 +86,9 @@ Q_Q1         N01426 N01422 0 QbreakN
 
           JOB CONCLUDED
 
-**** 04/08/21 17:00:51 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/25/21 19:34:39 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-DCTransientTtransistor"  [ D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_ResistorNetwork\003_ResistorNetwo
+ ** Profile: "SCHEMATIC1-DCTransientTtransistor"  [ D:\GitHub\OrCadPSpiceProjects\003_ResistorNetwork\003_resistornetwork-pspicefiles
 
 
  ****     JOB STATISTICS SUMMARY
@@ -98,5 +98,5 @@ Q_Q1         N01426 N01422 0 QbreakN
 
 
 
-  Total job time (using Solver 1)   =         .05
+  Total job time (using Solver 1)   =         .06
 

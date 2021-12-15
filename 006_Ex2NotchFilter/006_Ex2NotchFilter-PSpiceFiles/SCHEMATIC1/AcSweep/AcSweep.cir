@@ -1,4 +1,4 @@
-** Profile: "SCHEMATIC1-AcSweep"  [ D:\GitHub\OrCadPSpiceProjects\006_Ex2NotchFilter\006_Ex2NotchFilter-PSpiceFiles\SCHEMATIC1\AcSweep.sim ] 
+** Profile: "SCHEMATIC1-AcSweep"  [ d:\github\orcadpspiceprojects\006_ex2notchfilter\006_ex2notchfilter-pspicefiles\schematic1\acsweep.sim ] 
 
 ** Creating circuit file "AcSweep.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -6,7 +6,7 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of D:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 

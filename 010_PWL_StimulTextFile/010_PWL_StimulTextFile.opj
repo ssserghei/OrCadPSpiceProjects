@@ -63,32 +63,14 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "D:\GitHub\OrCadPSpiceProjects\010_PWL_StimulTextFile\010_pwl_stimultextfile.dsn")
-      (Path "Design Resources"
-         "D:\GitHub\OrCadPSpiceProjects\010_PWL_StimulTextFile\010_pwl_stimultextfile.dsn"
-         "SCHEMATIC1")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Simulation Profiles")
-      (Select "Design Resources"
-         "D:\GitHub\OrCadPSpiceProjects\010_PWL_StimulTextFile\010_pwl_stimultextfile.dsn"
-         "SCHEMATIC1" "PAGE1"))
+      (Select "Design Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 706"))
-      (Tab 0))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 747")
-        (Scroll "-333 0")
-        (Zoom "100")
-        (Occurrence "/"))
-      (Path
-         "D:\GITHUB\ORCADPSPICEPROJECTS\010_PWL_STIMULTEXTFILE\010_PWL_STIMULTEXTFILE.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "PAGE1")))
+        (Placement "44 0 1 -1 -1 -1 -1 0 0 0 512"))
+      (Tab 0)))
   (MPSSessionName "Maxim"))

@@ -1,0 +1,18 @@
+** Profile: "SCHEMATIC1-DcBias"  [ D:\GitHub\OrCadPSpiceProjects\013_OperationalAmplifier\013_OperationalAmplifier-PSpiceFiles\SCHEMATIC1\DcBias.sim ] 
+
+** Creating circuit file "DcBias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

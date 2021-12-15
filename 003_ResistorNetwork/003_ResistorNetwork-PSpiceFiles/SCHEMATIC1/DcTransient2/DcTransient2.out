@@ -1,7 +1,7 @@
 
-**** 04/10/21 16:44:26 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/25/21 19:34:46 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-DcTransient2"  [ d:\yandexdisk\sss_workhome\sss_orcad pspice\003_resistornetwork\003_resistornetwork-pspicef
+ ** Profile: "SCHEMATIC1-DcTransient2"  [ D:\GitHub\OrCadPSpiceProjects\003_ResistorNetwork\003_resistornetwork-pspicefiles\schematic
 
 
  ****     CIRCUIT DESCRIPTION
@@ -18,7 +18,7 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of D:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
@@ -45,9 +45,9 @@ Q_Q1         N01426 N01422 0 QbreakN
 **** RESUMING DcTransient2.cir ****
 .END
 
-**** 04/10/21 16:44:26 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/25/21 19:34:46 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-DcTransient2"  [ d:\yandexdisk\sss_workhome\sss_orcad pspice\003_resistornetwork\003_resistornetwork-pspicef
+ ** Profile: "SCHEMATIC1-DcTransient2"  [ D:\GitHub\OrCadPSpiceProjects\003_ResistorNetwork\003_resistornetwork-pspicefiles\schematic
 
 
  ****     BJT MODEL PARAMETERS
@@ -86,9 +86,9 @@ Q_Q1         N01426 N01422 0 QbreakN
 
           JOB CONCLUDED
 
-**** 04/10/21 16:44:26 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/25/21 19:34:46 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-DcTransient2"  [ d:\yandexdisk\sss_workhome\sss_orcad pspice\003_resistornetwork\003_resistornetwork-pspicef
+ ** Profile: "SCHEMATIC1-DcTransient2"  [ D:\GitHub\OrCadPSpiceProjects\003_ResistorNetwork\003_resistornetwork-pspicefiles\schematic
 
 
  ****     JOB STATISTICS SUMMARY
@@ -98,6 +98,6 @@ Q_Q1         N01426 N01422 0 QbreakN
 
 
 
-  License check-out time            =        1.81
-  Total job time (using Solver 1)   =         .03
+  License check-out time            =        1.31
+  Total job time (using Solver 1)   =         .06
 

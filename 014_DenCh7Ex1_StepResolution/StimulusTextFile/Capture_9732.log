@@ -1,0 +1,18 @@
+[2021-11-23T10:34:18.514+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPulseStateHandler::CDSPulseStateHandler] [DEBUG] - Creating CDSPulseStateHandler.
+[2021-11-23T10:34:18.514+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPulseManager::startSync] [DEBUG] - Param received is conf explore
+[2021-11-23T10:34:18.514+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPulseManager::startSync] [DEBUG] - Handle start server synchronously.
+[2021-11-23T10:34:18.515+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPulseManager::startSync] [DEBUG] - Sending server start event to health state handler.
+[2021-11-23T10:34:18.515+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [PulseStartEvent::PulseStartEvent] [DEBUG] - Creating pulse start event.
+[2021-11-23T10:34:18.515+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [PulseStateNoServer::handleEvent] [DEBUG] - Start event received.
+[2021-11-23T10:34:18.515+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPulseManagerImpl::getInitJsonFileLocation] [DEBUG] - Creating json file pathC:/Users/Maxim/AppData/Local/Temp\pulse_stage_Maxim_9732\sjson
+[2021-11-23T10:34:18.515+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPulseManagerImpl::launchInitTranslateServer] [DEBUG] - Launching Init Translate Server.
+[2021-11-23T10:34:18.516+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPulseManagerImpl::launchInitTranslateServer] [DEBUG] - Init translate server command is C:\Cadence\SPB_17.4\tools/pcbdw/bin\translate.bat -parent "9732" -parentlocation "C:/Users/Maxim/AppData/Local/Temp\pulse_stage_Maxim_9732\sjson" -appname "orcad" -conf "explore"
+[2021-11-23T10:34:19.341+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPortFileReaderThread::checkFileCreated] [DEBUG] - Checking for server json file from launch.
+[2021-11-23T10:34:24.856+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPortFileReaderThread::readPort] [DEBUG] - Reading server json file from launch.
+[2021-11-23T10:34:24.866+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPortFileReaderThread::readPort] [DEBUG] - Reading data from server json file.
+[2021-11-23T10:34:24.866+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPortFileReaderThread::readPort] [DEBUG] - Signaling server json file from launch as read.
+[2021-11-23T10:34:24.866+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPulseManagerImpl::updateData] [DEBUG] - Port file reading finished.
+[2021-11-23T10:34:24.866+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPulseManagerImpl::updateData] [DEBUG] - Server started successfully.
+[2021-11-23T10:34:24.866+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPulseManagerImpl::updateData] [ERROR] - Pulse health checkup system could not be initialized for server http://127.0.0.1:7200
+[2021-11-23T10:34:24.866+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPulseStateHandler::setCurrentState] [DEBUG] - Setting state as started
+[2021-11-23T10:34:24.866+0200] [9732] [17120] [Maxim] [Capture.exe] [192.168.170.54] [SSSNooteLegion] [CDSPulseManager::getDataValue] [DEBUG] - value is: http://127.0.0.1:7200

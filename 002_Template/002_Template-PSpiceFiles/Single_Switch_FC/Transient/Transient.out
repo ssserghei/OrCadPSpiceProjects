@@ -1,7 +1,7 @@
 
-**** 04/05/21 21:59:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 11/25/21 19:33:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "Single_Switch_FC-Transient"  [ D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\002_Template\002_template-pspicefiles\single
+ ** Profile: "Single_Switch_FC-Transient"  [ D:\GitHub\OrCadPSpiceProjects\002_Template\002_template-pspicefiles\single_switch_fc\tra
 
 
  ****     CIRCUIT DESCRIPTION
@@ -18,8 +18,8 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
-.lib "nomd.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
 
 *Analysis directives: 
 .TRAN  0 5m 4m 
@@ -47,16 +47,10 @@ Kn_K1         L_L1 L_L2     1
 
 **** RESUMING Transient.cir ****
 .END
-
-INFO(ORPSIM-15423): Unable to find index file nomd.ind for library file nomd.lib.
-
-INFO(ORPSIM-15422): Making new index file nomd.ind for library file nomd.lib.
-
-Index has 34102 entries from 205 file(s).
 
-**** 04/05/21 21:59:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 11/25/21 19:33:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "Single_Switch_FC-Transient"  [ D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\002_Template\002_template-pspicefiles\single
+ ** Profile: "Single_Switch_FC-Transient"  [ D:\GitHub\OrCadPSpiceProjects\002_Template\002_template-pspicefiles\single_switch_fc\tra
 
 
  ****     Diode MODEL PARAMETERS
@@ -79,9 +73,9 @@ Index has 34102 entries from 205 file(s).
          XTI    2            
 
 
-**** 04/05/21 21:59:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 11/25/21 19:33:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "Single_Switch_FC-Transient"  [ D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\002_Template\002_template-pspicefiles\single
+ ** Profile: "Single_Switch_FC-Transient"  [ D:\GitHub\OrCadPSpiceProjects\002_Template\002_template-pspicefiles\single_switch_fc\tra
 
 
  ****     MOSFET MODEL PARAMETERS
@@ -132,9 +126,9 @@ Index has 34102 entries from 205 file(s).
        XPART    0            
 
 
-**** 04/05/21 21:59:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 11/25/21 19:33:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "Single_Switch_FC-Transient"  [ D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\002_Template\002_template-pspicefiles\single
+ ** Profile: "Single_Switch_FC-Transient"  [ D:\GitHub\OrCadPSpiceProjects\002_Template\002_template-pspicefiles\single_switch_fc\tra
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -168,9 +162,9 @@ Index has 34102 entries from 205 file(s).
 
           JOB CONCLUDED
 
-**** 04/05/21 21:59:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 11/25/21 19:33:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "Single_Switch_FC-Transient"  [ D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\002_Template\002_template-pspicefiles\single
+ ** Profile: "Single_Switch_FC-Transient"  [ D:\GitHub\OrCadPSpiceProjects\002_Template\002_template-pspicefiles\single_switch_fc\tra
 
 
  ****     JOB STATISTICS SUMMARY
@@ -180,5 +174,5 @@ Index has 34102 entries from 205 file(s).
 
 
 
-  Total job time (using Solver 1)   =        1.16
+  Total job time (using Solver 1)   =         .08
 

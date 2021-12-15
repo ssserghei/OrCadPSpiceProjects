@@ -52,19 +52,21 @@
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Simulation Profiles")
       (Path "PSpice Resources" "Stimulus Files")
-      (Select "PSpice Resources" "Stimulus Files"))
+      (Select "Design Resources"
+         "D:\GitHub\OrCadPSpiceProjects\009_SimulationProfile_Ex6.3\009_simulationprofile_ex6_3.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 208 0 676"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 529"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 591 24 717")
-        (Scroll "250 152")
-        (Zoom "200")
+        (Placement "44 0 1 -1 -1 5 24 5 1290 24 570")
+        (Scroll "0 0")
+        (Zoom "140")
         (Occurrence "/"))
       (Path
          "D:\GITHUB\ORCADPSPICEPROJECTS\009_SIMULATIONPROFILE_EX6.3\009_SIMULATIONPROFILE_EX6_3.DSN")

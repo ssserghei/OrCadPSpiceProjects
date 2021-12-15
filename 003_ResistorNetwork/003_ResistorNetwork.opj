@@ -40,12 +40,12 @@
          ".\003_resistornetwork-pspicefiles\schematic1\dctransientttransistor.sim"
         (DisplayName "SCHEMATIC1-DCTransientTtransistor")
         (Type "PSpice Profile"))
-      (ActiveProfile
-         ".\003_resistornetwork-pspicefiles\schematic1\dctransient2.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\003_resistornetwork-pspicefiles\schematic1\dctransient2.sim"
         (DisplayName "SCHEMATIC1-DcTransient2")
-        (Type "PSpice Profile")))
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\003_resistornetwork-pspicefiles\schematic1\dctransient2.sim"))
     (Folder "Model Libraries"
       (Sort User))
     (Folder "Stimulus Files"
@@ -92,23 +92,11 @@
       (Path "Design Resources" "Library")
       (Path "Outputs")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Simulation Profiles")
-      (Select "Logs"))
+      (Path "PSpice Resources" "Simulation Profiles"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 134 0 520"))
-      (Tab 0))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 582 24 561")
-        (Scroll "70 60")
-        (Zoom "118")
-        (Occurrence "/"))
-      (Path
-         "D:\YANDEXDISK\SSS_WORKHOME\SSS_ORCAD PSPICE\003_RESISTORNETWORK\003_RESISTORNETWORK.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "PAGE1")))
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 529"))
+      (Tab 0)))
   (Folder "Logs"))

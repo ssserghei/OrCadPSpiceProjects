@@ -1,0 +1,43 @@
+
+**** 11/25/21 19:57:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1_Test"  [ D:\GitHub\OrCadPSpiceProjects\014_DenCh7Ex1_StepResolution-PSpiceFiles\SCHEMATIC1\1_Test.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1_Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 014_DENCH7EX1_STEPRESOLUTION
+V_V1         N00078 0  AC 1
++SIN 0 1 V 1 k 0 0 0
+---------$
+ERROR -- Expecting keyword STIMULUS, saw V.
+
+R_R1         0 N00078  1k TC=0,0 
+
+**** RESUMING 1_Test.cir ****
+.END
+

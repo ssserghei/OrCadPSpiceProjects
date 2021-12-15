@@ -1,6 +1,6 @@
 (ExpressProject "012_CurrentConsummer"
   (ProjectVersion "19981106")
-  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[05/09/21]")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[06/20/21]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
@@ -102,22 +102,18 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources"
+         "d:\github\orcadpspiceprojects\012_currentconsummer\012_currentconsummer.dsn")
+      (Path "Design Resources"
+         "d:\github\orcadpspiceprojects\012_currentconsummer\012_currentconsummer.dsn"
+         "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources"))
+      (Select "Design Resources"
+         "d:\github\orcadpspiceprojects\012_currentconsummer\012_currentconsummer.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 768"))
-      (Tab 0))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 786")
-        (Scroll "304 264")
-        (Zoom "200")
-        (Occurrence "/"))
-      (Path
-         "D:\GITHUB\ORCADPSPICEPROJECTS\012_CURRENTCONSUMMER\012_CURRENTCONSUMMER.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 745"))
+      (Tab 0))))

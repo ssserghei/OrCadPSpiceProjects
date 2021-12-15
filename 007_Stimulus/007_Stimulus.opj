@@ -88,6 +88,11 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources"
+         "D:\GitHub\OrCadPSpiceProjects\007_Stimulus\007_stimulus.dsn")
+      (Path "Design Resources"
+         "D:\GitHub\OrCadPSpiceProjects\007_Stimulus\007_stimulus.dsn"
+         "SCHEMATIC1")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Simulation Profiles")
@@ -96,11 +101,23 @@
       (Path "PSpice Resources" "Simulation Profiles"
          "SCHEMATIC1-transient1_Configuration" "Profile Stimulus Files")
       (Path "PSpice Resources" "Stimulus Files")
-      (Select "Design Resources"))
+      (Select "Design Resources"
+         "D:\GitHub\OrCadPSpiceProjects\007_Stimulus\007_stimulus.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 208 0 676"))
-      (Tab 0)))
+        (Placement "44 0 1 -1 -1 -1 -1 0 116 0 466"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 5 24 530")
+        (Scroll "697 0")
+        (Zoom "140")
+        (Occurrence "/"))
+      (Path "D:\GITHUB\ORCADPSPICEPROJECTS\007_STIMULUS\007_STIMULUS.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
   (MPSSessionName "Maxim"))

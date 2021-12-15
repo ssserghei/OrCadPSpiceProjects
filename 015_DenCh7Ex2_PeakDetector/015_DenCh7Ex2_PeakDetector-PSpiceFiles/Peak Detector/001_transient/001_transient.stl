@@ -1,0 +1,13 @@
+* D:\GitHub\OrCadPSpiceProjects\015_DenCh7Ex2_PeakDetector\015_DenCh7Ex2_PeakDetector-PSpiceFiles\Peak Detector\001_transient\001_transient.stl written on Sat Dec  4 00:58:39 2021
+* by Stimulus Editor -- Serial Number: 825242159 -- Version 17.4.0
+;!Stimulus Get
+;! VSTIM_Stimulus Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 60us
+;!Yrange 0 10
+;!AutoUniverse
+;!XminRes 500us
+;!YminRes 100u
+;!Ok
+.STIMULUS VSTIM_Stimulus EXP( 0 10 10u 5u 40u 5u )

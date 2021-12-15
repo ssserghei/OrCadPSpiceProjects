@@ -1,4 +1,4 @@
-** Profile: "Single_Switch_FC-Transient"  [ D:\YandexDisk\SSS_WorkHome\SSS_OrCad PSpice\002_Template\002_template-pspicefiles\single_switch_fc\transient.sim ] 
+** Profile: "Single_Switch_FC-Transient"  [ D:\GitHub\OrCadPSpiceProjects\002_Template\002_template-pspicefiles\single_switch_fc\transient.sim ] 
 
 ** Creating circuit file "Transient.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -6,8 +6,8 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
-.lib "nomd.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
 
 *Analysis directives: 
 .TRAN  0 5m 4m 

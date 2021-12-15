@@ -1,7 +1,7 @@
-
-**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+**** 11/23/21 07:30:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_exactivenotchfilt-pspicefiles\schematic1
 
 
  ****     CIRCUIT DESCRIPTION
@@ -18,7 +18,7 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of D:\Program Files\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
@@ -51,9 +51,9 @@ X_R6         OUT N05718 0 POT PARAMS: SET={ratio} VALUE=100k
 **** RESUMING ACSweep.cir ****
 .END
 
-**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/23/21 07:30:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_exactivenotchfilt-pspicefiles\schematic1
 
 
  ****     Diode MODEL PARAMETERS
@@ -70,9 +70,9 @@ X_R6         OUT N05718 0 POT PARAMS: SET={ratio} VALUE=100k
          CJO                   10.000000E-12                   10.000000E-12 
 
 
-**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/23/21 07:30:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_exactivenotchfilt-pspicefiles\schematic1
 
 
  ****     Junction FET MODEL PARAMETERS
@@ -90,9 +90,9 @@ X_R6         OUT N05718 0 POT PARAMS: SET={ratio} VALUE=100k
           IS    2.500000E-12    2.500000E-12 
 
 
-**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/23/21 07:30:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_exactivenotchfilt-pspicefiles\schematic1
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -162,9 +162,9 @@ X_R6         OUT N05718 0 POT PARAMS: SET={ratio} VALUE=100k
     TOTAL POWER DISSIPATION   8.69E-03  WATTS
 
 
-**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/23/21 07:30:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_exactivenotchfilt-pspicefiles\schematic1
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -234,9 +234,9 @@ X_R6         OUT N05718 0 POT PARAMS: SET={ratio} VALUE=100k
     TOTAL POWER DISSIPATION   8.69E-03  WATTS
 
 
-**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/23/21 07:30:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_exactivenotchfilt-pspicefiles\schematic1
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -306,9 +306,9 @@ X_R6         OUT N05718 0 POT PARAMS: SET={ratio} VALUE=100k
     TOTAL POWER DISSIPATION   8.69E-03  WATTS
 
 
-**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/23/21 07:30:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_exactivenotchfilt-pspicefiles\schematic1
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -378,9 +378,9 @@ X_R6         OUT N05718 0 POT PARAMS: SET={ratio} VALUE=100k
     TOTAL POWER DISSIPATION   8.69E-03  WATTS
 
 
-**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/23/21 07:30:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_exactivenotchfilt-pspicefiles\schematic1
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -450,9 +450,9 @@ X_R6         OUT N05718 0 POT PARAMS: SET={ratio} VALUE=100k
     TOTAL POWER DISSIPATION   8.69E-03  WATTS
 
 
-**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/23/21 07:30:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_exactivenotchfilt-pspicefiles\schematic1
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -522,9 +522,9 @@ X_R6         OUT N05718 0 POT PARAMS: SET={ratio} VALUE=100k
     TOTAL POWER DISSIPATION   8.69E-03  WATTS
 
 
-**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/23/21 07:30:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_exactivenotchfilt-pspicefiles\schematic1
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -594,9 +594,9 @@ X_R6         OUT N05718 0 POT PARAMS: SET={ratio} VALUE=100k
     TOTAL POWER DISSIPATION   8.69E-03  WATTS
 
 
-**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/23/21 07:30:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_exactivenotchfilt-pspicefiles\schematic1
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -666,9 +666,9 @@ X_R6         OUT N05718 0 POT PARAMS: SET={ratio} VALUE=100k
     TOTAL POWER DISSIPATION   8.69E-03  WATTS
 
 
-**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/23/21 07:30:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_exactivenotchfilt-pspicefiles\schematic1
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -741,9 +741,9 @@ X_R6         OUT N05718 0 POT PARAMS: SET={ratio} VALUE=100k
 
           JOB CONCLUDED
 
-**** 04/18/21 20:38:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 11/23/21 07:30:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_ExActiveNotchFilt-PSpiceFiles\SCHEMATIC1
+ ** Profile: "SCHEMATIC1-ACSweep"  [ D:\GitHub\OrCadPSpiceProjects\005_ExActiveNotchFilt\005_exactivenotchfilt-pspicefiles\schematic1
 
 
  ****     JOB STATISTICS SUMMARY
@@ -755,5 +755,5 @@ X_R6         OUT N05718 0 POT PARAMS: SET={ratio} VALUE=100k
 
 
 
-  Total job time (using Solver 1)   =         .08
+  Total job time (using Solver 1)   =         .14
 

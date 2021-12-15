@@ -1,0 +1,98 @@
+
+**** 06/20/21 17:45:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-2trensient"  [ D:\GitHub\OrCadPSpiceProjects\013_OperationalAmplifier\013_OperationalAmplifier-PSpiceFiles\S
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "2trensient.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 013_OPERATIONALAMPLIFIER
+E_U1         N00925 0 VALUE {LIMIT(V(N00964,N00874)*1E6,-15V,+15V)}
+V_V3         N00968 0 10Vdc
+R_R3         N00925 N00874  10k TC=0,0 
+R_R4         N00874 0  10k TC=0,0 
+R_R5         N00968 N00964  20k TC=0,0 
+R_R8         N01282 0  4k TC=0,0 
+V_V4         N01266 0 3Vdc
+R_R6         N01266 N01276  2k TC=0,0 
+R_R9         N01266 N01296  5k TC=0,0 
+R_R10         0 N01296  10k TC=0,0 
+R_R7         N01276 N01282  8k TC=0,0 
+E_U2         N01282 0 VALUE {LIMIT(V(N01296,N01276)*1E6,-15V,+15V)}
+
+**** RESUMING 2trensient.cir ****
+.END
+
+**** 06/20/21 17:45:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-2trensient"  [ D:\GitHub\OrCadPSpiceProjects\013_OperationalAmplifier\013_OperationalAmplifier-PSpiceFiles\S
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00874)    7.5000 (N00925)   15.0000 (N00964)   10.0000 (N00968)   10.0000     
+
+(N01266)    3.0000 (N01276)    2.0000 (N01282)   -2.0000 (N01296)    2.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         0.000E+00
+    V_V4        -7.000E-04
+
+    TOTAL POWER DISSIPATION   2.10E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 06/20/21 17:45:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-2trensient"  [ D:\GitHub\OrCadPSpiceProjects\013_OperationalAmplifier\013_OperationalAmplifier-PSpiceFiles\S
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =         .55
+  Total job time (using Solver 1)   =        0.00
+

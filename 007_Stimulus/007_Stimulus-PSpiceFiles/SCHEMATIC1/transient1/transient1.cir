@@ -1,11 +1,11 @@
-** Profile: "SCHEMATIC1-transient1"  [ d:\github\orcadpspiceprojects\007_stimulus\007_stimulus-pspicefiles\schematic1\transient1.sim ] 
+** Profile: "SCHEMATIC1-transient1"  [ D:\GitHub\OrCadPSpiceProjects\007_Stimulus\007_stimulus-pspicefiles\schematic1\transient1.sim ] 
 
 ** Creating circuit file "transient1.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
 * Profile Libraries :
-.INC "d:\github\orcadpspiceprojects\007_stimulus\007_stimulus-pspicefiles\schematic1\transient1\transient1_profile.inc" 
+.INC "D:\GitHub\OrCadPSpiceProjects\007_Stimulus\007_stimulus-pspicefiles\schematic1\transient1\transient1_profile.inc" 
 * Local Libraries :
 .STMLIB "../../../007_stimulus-pspicefiles/007_stimulus.stl" 
 * From [PSPICE NETLIST] section of C:\Users\Maxim\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
